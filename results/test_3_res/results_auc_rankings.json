@@ -1,0 +1,1 @@
+{"good_entity_rankings": [3.0, 3.0, 2.0, 1.0, 1.0], "bad_entity_rankings": [8.0, 2.0, 3.0, 2.0, 2.0], "AUC_mitigator": 8.0, "AUC_disinformer": 12.0}

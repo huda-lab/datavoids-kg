@@ -1,0 +1,204 @@
+{
+    "good_budget": [
+        [
+            "john_burridge",
+            "playsfor",
+            "queen_of_the_south_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "southampton_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "hibernian_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "dunfermline_athletic_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "dunfermline_athletic_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "newcastle_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "queen_of_the_south_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "dumbarton_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "darlington_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "dumbarton_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "darlington_f.c."
+        ]
+    ],
+    "good_budget_costs": {
+        "john_burridge-playsfor-darlington_f.c.": 1,
+        "john_burridge-playsfor-hibernian_f.c.": 2,
+        "john_burridge-isaffiliatedto-darlington_f.c.": 3,
+        "john_burridge-isaffiliatedto-dumbarton_f.c.": 4,
+        "john_burridge-playsfor-dumbarton_f.c.": 5,
+        "john_burridge-playsfor-dunfermline_athletic_f.c.": 6,
+        "john_burridge-isaffiliatedto-dunfermline_athletic_f.c.": 7,
+        "john_burridge-playsfor-queen_of_the_south_f.c.": 8,
+        "john_burridge-isaffiliatedto-newcastle_united_f.c.": 9,
+        "john_burridge-playsfor-southampton_f.c.": 10,
+        "john_burridge-isaffiliatedto-queen_of_the_south_f.c.": 11
+    },
+    "bad_budget": [
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "gateshead_f.c."
+        ]
+    ],
+    "bad_budget_costs": {
+        "john_burridge-isaffiliatedto-gateshead_f.c.": 1
+    },
+    "overlapping_budget": [
+        [
+            "john_burridge",
+            "playsfor",
+            "lincoln_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "northampton_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "aston_villa_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "manchester_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "southend_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "blackpool_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "wolverhampton_wanderers_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "sheffield_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "falkirk_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "aberdeen_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "queens_park_rangers_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "grimsby_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "workington_a.f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "derby_county_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "blackpool_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "lincoln_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "aston_villa_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "northampton_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "hasgender",
+            "male"
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "southampton_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "scarborough_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "aberdeen_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "queens_park_rangers_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "workington_a.f.c."
+        ]
+    ]
+}

@@ -1,0 +1,85 @@
+,claim,budget_degrees,budget_relevance,budget_costs
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee Jennifer Garner,Ben Affleck /film/director/film The Town,1,0.5008100264138391,2.718281828459045
+Ben Affleck /film/actor/film./film/performance/film Dogma,Ben Affleck /film/director/film The Town,4,0.5010219798161161,54.598150033144236
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee Liv Tyler,Ben Affleck /film/director/film The Town,1,0.5015846437803765,2.718281828459045
+Ben Affleck /film/actor/film./film/performance/film Shakespeare in Love,Ben Affleck /film/director/film The Town,4,0.501825682155793,54.598150033144236
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Grant Heslov,Ben Affleck /film/director/film The Town,58,0.5019169951922376,1.545538935590104e+25
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee Grant Heslov,Ben Affleck /film/director/film The Town,1,0.5019622940405285,2.718281828459045
+Ben Affleck /base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency United States dollar,Ben Affleck /film/director/film The Town,36,0.5021732908711483,4311231547115195.0
+Ben Affleck /film/actor/film./film/performance/film Gigli,Ben Affleck /film/director/film The Town,4,0.5029172566305696,54.598150033144236
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Blake Lively,Ben Affleck /film/director/film The Town,58,0.5040598215512456,1.545538935590104e+25
+Ben Affleck /film/actor/film./film/performance/film Smokin' Aces,Ben Affleck /film/director/film The Town,4,0.5040911715113986,54.598150033144236
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Pete Postlethwaite,Ben Affleck /film/director/film The Town,58,0.5041321767338787,1.545538935590104e+25
+Blake Lively /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film The Town,35,0.5041398056063632,1586013452313430.8
+Titus Welliver /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film The Town,42,0.504807562485307,1.739274941520501e+18
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Rebecca Hall,Ben Affleck /film/director/film The Town,58,0.5052458507121452,1.545538935590104e+25
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Jon Hamm,Ben Affleck /film/director/film The Town,58,0.5059675720736999,1.545538935590104e+25
+Jeremy Renner /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film The Town,48,0.5065349195337825,7.016735912097631e+20
+Ben Affleck /people/person/profession television producer,Ben Affleck /film/director/film The Town,6,0.5068355116069857,403.4287934927351
+The Town /film/film/written_by Ben Affleck,Ben Affleck /film/director/film The Town,47,0.5209427064274927,2.5813128861900675e+20
+The Town /award/award_winning_work/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film The Town,47,0.5222719056819145,2.5813128861900675e+20
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/nominated_for The Town,Ben Affleck /film/director/film The Town,44,0.5273029740630429,1.2851600114359308e+19
+Ben Affleck /film/director/film Gone Baby Gone,Ben Affleck /film/director/film The Town,4,1.507000465678318,54.598150033144236
+Chris Messina /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,40,0.5009634482857414,2.3538526683702e+17
+Ben Affleck /base/popstra/celebrity/canoodled./base/popstra/canoodled/participant Krista Allen,Ben Affleck /film/director/film Argo,61,0.5010670407308888,3.10429793570192e+26
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee Chris Messina,Ben Affleck /film/director/film Argo,1,0.5011571625077034,2.718281828459045
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Clea DuVall,Ben Affleck /film/director/film Argo,58,0.5012196278224699,1.545538935590104e+25
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Alan Arkin,Ben Affleck /film/director/film Argo,58,0.5013191669373347,1.545538935590104e+25
+Kyle Chandler /award/award_nominee/award_nominations./award/award_nomination/award_nominee Ben Affleck,Ben Affleck /film/director/film Argo,48,0.5015664049401745,7.016735912097631e+20
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Bryan Cranston,Ben Affleck /film/director/film Argo,58,0.5016696391034812,1.545538935590104e+25
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Rory Cochrane,Ben Affleck /film/director/film Argo,58,0.5020265468251752,1.545538935590104e+25
+Clea DuVall /award/award_nominee/award_nominations./award/award_nomination/award_nominee Ben Affleck,Ben Affleck /film/director/film Argo,36,0.5020320303621679,4311231547115195.0
+Victor Garber /award/award_nominee/award_nominations./award/award_nomination/award_nominee Ben Affleck,Ben Affleck /film/director/film Argo,56,0.5025343677911213,2.091659496012996e+24
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee Rory Cochrane,Ben Affleck /film/director/film Argo,1,0.5027876803509197,2.718281828459045
+Rory Cochrane /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,45,0.5027929253963076,3.4934271057485095e+19
+Tate Donovan /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,48,0.5028338128880543,7.016735912097631e+20
+Ben Affleck /award/award_winner/awards_won./award/award_honor/award_winner Victor Garber,Ben Affleck /film/director/film Argo,58,0.5031570968666494,1.545538935590104e+25
+Victor Garber /award/award_winner/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,56,0.503994022291815,2.091659496012996e+24
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award Academy Award for Best Picture,Ben Affleck /film/director/film Argo,39,0.5048038673387185,8.659340042399374e+16
+BAFTA Award for Best Direction /award/award_category/winners./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,125,0.5062958250716301,1.9355760420357226e+54
+BAFTA Award for Best Film /award/award_category/winners./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,120,0.5083287402307299,1.3041808783936323e+52
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/award Golden Globe Award for Best Director,Ben Affleck /film/director/film Argo,39,0.5084529213275529,8.659340042399374e+16
+Argo /award/award_winning_work/awards_won./award/award_honor/award_winner Ben Affleck,Ben Affleck /film/director/film Argo,123,0.5220432353850482,2.6195173187490626e+53
+Ben Affleck /award/award_nominee/award_nominations./award/award_nomination/nominated_for Argo,Ben Affleck /film/director/film Argo,44,0.5286173051264287,1.2851600114359308e+19
+Mark Wahlberg /award/award_winner/awards_won./award/award_honor/award_winner George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,75,0.5008354179237606,3.7332419967990015e+32
+Argo /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,57,0.5009708392340402,5.685719999335932e+24
+George Clooney /base/popstra/celebrity/dated./base/popstra/dated/participant Julia Roberts,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,2,0.5015544841273292,7.38905609893065
+George Clooney /base/popstra/celebrity/friendship./base/popstra/friendship/participant Guy Ritchie,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,2,0.5024126580857735,7.38905609893065
+Nicole Kidman /base/popstra/celebrity/friendship./base/popstra/friendship/participant George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,14,0.5025366327093788,1202604.2841647768
+The Informant! /film/film/executive_produced_by George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,32,0.5040526694646005,78962960182680.69
+Bernie Mac /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,34,0.5059809216079904,583461742527454.9
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Bernie Mac,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.5060623297434327,1.2523631708422137e+29
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Casey Affleck,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.507815082144023,1.2523631708422137e+29
+Elliott Gould /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,36,0.5079983801812993,4311231547115195.0
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Elliott Gould,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.5080213816697275,1.2523631708422137e+29
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Carl Reiner,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.5082766601357344,1.2523631708422137e+29
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Ocean's Thirteen,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,2,0.5084037018804799,7.38905609893065
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Julia Roberts,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.5086488440786978,1.2523631708422137e+29
+Ocean's Thirteen /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,35,0.5092445804457835,1586013452313430.8
+Casey Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,49,0.5110485447203152,1.9073465724950998e+21
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Catherine Zeta-Jones,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,67,0.5136793085519762,1.2523631708422137e+29
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Ocean's Eleven,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,2,0.5173293055806196,7.38905609893065
+George Clooney /film/actor/film./film/performance/film Three Kings,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,15,1.5034307895097787,3269017.3724721107
+George Clooney /film/actor/film./film/performance/film Ocean's Thirteen,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,15,1.5231848272241364,3269017.3724721107
+George Clooney /film/actor/film./film/performance/film Ocean's Eleven,George Clooney /film/actor/film./film/performance/film Ocean's Twelve,15,1.5284263591631722,3269017.3724721107
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Grant Heslov,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5037813657797429,1.2523631708422137e+29
+Peter Jacobson /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",42,0.5038007957768584,1.739274941520501e+18
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Frank Langella,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5038029414200089,1.2523631708422137e+29
+Patricia Clarkson /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",78,0.5045081347461663,7.498416996990121e+33
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Tate Donovan,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5047763325202232,1.2523631708422137e+29
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Patricia Clarkson,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5048405803846885,1.2523631708422137e+29
+Tom McCarthy /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",53,0.5050407132362982,1.0413759433029089e+23
+Ray Wise /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",28,0.5054344182939697,1446257064291.475
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Peter Jacobson,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5055104647098297,1.2523631708422137e+29
+Frank Langella /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",56,0.5055924705903212,2.091659496012996e+24
+Tate Donovan /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",66,0.5057073736714985,4.607186634331292e+28
+Alex Borstein /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",51,0.5065706761781364,1.4093490824269389e+22
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Jeff Daniels,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5073169014529808,1.2523631708422137e+29
+David Strathairn /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",66,0.5075882806943982,4.607186634331292e+28
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Alex Borstein,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5077674100065156,1.2523631708422137e+29
+"George Clooney /film/director/film Good Night, and Good Luck.","George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",21,0.5089597646701941,1318815734.4832146
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee David Strathairn,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",67,0.5090667798252477,1.2523631708422137e+29
+"Good Night, and Good Luck. /film/film/written_by George Clooney","George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",71,0.5095150902936919,6.837671229762744e+30
+George Clooney /film/actor/film./film/performance/film Syriana,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",15,0.5134486892157931,3269017.3724721107
+"Good Night, and Good Luck. /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney","George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",71,0.5176669690560387,6.837671229762744e+30
+"George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Good Night, and Good Luck.","George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck.",2,0.5183367710474063,7.38905609893065

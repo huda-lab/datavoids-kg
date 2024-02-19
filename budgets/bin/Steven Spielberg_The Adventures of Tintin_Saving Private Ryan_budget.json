@@ -1,0 +1,277 @@
+{
+    "good_budget": [
+        [
+            "/m/012mrr",
+            "/film/film/written_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/011xg5",
+            "/film/film/written_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/people/person/profession",
+            "/m/0dxtg"
+        ],
+        [
+            "/m/0js9s",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/02qyxs5"
+        ],
+        [
+            "/m/0h21v2",
+            "/film/film/produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/08xvpn"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/030_3z"
+        ],
+        [
+            "/m/06jrhz",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0js9s"
+        ],
+        [
+            "/m/0js9s",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/film/director/film",
+            "/m/012mrr"
+        ],
+        [
+            "/m/06pj8",
+            "/tv/tv_producer/programs_produced./tv/tv_producer_term/program",
+            "/m/0vhm"
+        ],
+        [
+            "/m/06pj8",
+            "/organization/organization_founder/organizations_founded",
+            "/m/030_1_"
+        ],
+        [
+            "/m/08xvpn",
+            "/film/film/produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/07r1h",
+            "/base/popstra/celebrity/friendship./base/popstra/friendship/participant",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/0drtkx"
+        ],
+        [
+            "/m/01f7jt",
+            "/film/film/executive_produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/02q_cc",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/02q_cc",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/06pj8"
+        ]
+    ],
+    "good_budget_costs": {
+        "/m/07r1h-/base/popstra/celebrity/friendship./base/popstra/friendship/participant-/m/06pj8": 1,
+        "/m/06pj8-/organization/organization_founder/organizations_founded-/m/030_1_": 2,
+        "/m/011xg5-/film/film/written_by-/m/06pj8": 3,
+        "/m/012mrr-/film/film/written_by-/m/06pj8": 4,
+        "/m/08xvpn-/film/film/produced_by-/m/06pj8": 5,
+        "/m/06pj8-/tv/tv_producer/programs_produced./tv/tv_producer_term/program-/m/0vhm": 6,
+        "/m/0js9s-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/06pj8": 7,
+        "/m/06jrhz-/award/award_winner/awards_won./award/award_honor/award_winner-/m/06pj8": 8,
+        "/m/0h21v2-/film/film/produced_by-/m/06pj8": 9,
+        "/m/01f7jt-/film/film/executive_produced_by-/m/06pj8": 10,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/08xvpn": 11,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0js9s": 12,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/030_3z": 13,
+        "/m/02q_cc-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/06pj8": 14,
+        "/m/0js9s-/award/award_winner/awards_won./award/award_honor/award_winner-/m/06pj8": 15,
+        "/m/06pj8-/people/person/profession-/m/0dxtg": 16,
+        "/m/02q_cc-/award/award_winner/awards_won./award/award_honor/award_winner-/m/06pj8": 17,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award-/m/02qyxs5": 18,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award-/m/0drtkx": 19,
+        "/m/06pj8-/film/director/film-/m/012mrr": 20
+    },
+    "bad_budget": [
+        [
+            "/m/0bxtg",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/06pj8"
+        ],
+        [
+            "/m/02pqp12",
+            "/award/award_category/winners./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/02qjpv5",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/0gq9h"
+        ],
+        [
+            "/m/0gq9h",
+            "/award/award_category/winners./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/05mvd62"
+        ],
+        [
+            "/m/07024",
+            "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/09q_6t",
+            "/award/award_ceremony/awards_presented./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/02pqp12"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/05m9f9"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/02qjpv5"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/07024"
+        ],
+        [
+            "/m/0bxtg",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/040njc"
+        ],
+        [
+            "/m/02qjpv5",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/012mrr"
+        ],
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0bxtg"
+        ],
+        [
+            "/m/02ywhz",
+            "/award/award_ceremony/awards_presented./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/0260bz",
+            "/film/film/produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/06pj8",
+            "/people/person/places_lived./people/place_lived/location",
+            "/m/0rk71"
+        ]
+    ],
+    "bad_budget_costs": {
+        "/m/06pj8-/people/person/places_lived./people/place_lived/location-/m/0rk71": 1,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/05m9f9": 2,
+        "/m/0260bz-/film/film/produced_by-/m/06pj8": 3,
+        "/m/06pj8-/award/award_winner/awards_won./award/award_honor/award_winner-/m/02qjpv5": 4,
+        "/m/02qjpv5-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/06pj8": 5,
+        "/m/02qjpv5-/award/award_winner/awards_won./award/award_honor/award_winner-/m/06pj8": 6,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award-/m/02pqp12": 7,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/012mrr": 8,
+        "/m/02pqp12-/award/award_category/winners./award/award_honor/award_winner-/m/06pj8": 9,
+        "/m/0gq9h-/award/award_category/winners./award/award_honor/award_winner-/m/06pj8": 10,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award-/m/0gq9h": 11,
+        "/m/09q_6t-/award/award_ceremony/awards_presented./award/award_honor/award_winner-/m/06pj8": 12,
+        "/m/06pj8-/award/award_winner/awards_won./award/award_honor/award_winner-/m/05mvd62": 13,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award-/m/040njc": 14,
+        "/m/02ywhz-/award/award_ceremony/awards_presented./award/award_honor/award_winner-/m/06pj8": 15,
+        "/m/0bxtg-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/06pj8": 16,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0bxtg": 17,
+        "/m/0bxtg-/award/award_winner/awards_won./award/award_honor/award_winner-/m/06pj8": 18,
+        "/m/07024-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/06pj8": 19,
+        "/m/06pj8-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/07024": 20
+    },
+    "overlapping_budget": [
+        [
+            "/m/06pj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/05mvd62"
+        ],
+        [
+            "/m/0cc5qkt",
+            "/film/film/produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/0k2sk",
+            "/film/film/executive_produced_by",
+            "/m/06pj8"
+        ],
+        [
+            "/m/09d28z",
+            "/award/award_category/winners./award/award_honor/award_winner",
+            "/m/06pj8"
+        ],
+        [
+            "/m/02rb84n",
+            "/film/film/produced_by",
+            "/m/06pj8"
+        ]
+    ]
+}

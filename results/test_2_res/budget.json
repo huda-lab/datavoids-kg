@@ -1,0 +1,251 @@
+{
+    "good_budget": [
+        [
+            "/m/01bl7g",
+            "/film/film/country",
+            "/m/07ssc"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/0ch6mp2"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/09zzb8"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/09vw2b7"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/production_companies",
+            "/m/05rrtf"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/02r96rf"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/produced_by",
+            "/m/03h304l"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/04xvh5"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/0556j8"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/01jfsb"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/estimated_budget./measurement_unit/dated_money_value/currency",
+            "/m/09nqf"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/03k9fj"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium",
+            "/m/029j_"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/language",
+            "/m/03115z"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/04t2t"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/genre",
+            "/m/05p553"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/music",
+            "/m/05_pkf"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/featured_film_locations",
+            "/m/02_286"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/country",
+            "/m/03h64"
+        ],
+        [
+            "/m/01bl7g",
+            "/film/film/language",
+            "/m/02h40lc"
+        ]
+    ],
+    "good_budget_costs": {
+        "/m/01bl7g-/film/film/music-/m/05_pkf": 1,
+        "/m/01bl7g-/film/film/genre-/m/0556j8": 2,
+        "/m/01bl7g-/film/film/genre-/m/04t2t": 3,
+        "/m/01bl7g-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/09zzb8": 4,
+        "/m/01bl7g-/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium-/m/029j_": 5,
+        "/m/01bl7g-/film/film/genre-/m/03k9fj": 6,
+        "/m/01bl7g-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/02r96rf": 7,
+        "/m/01bl7g-/film/film/language-/m/03115z": 8,
+        "/m/01bl7g-/film/film/country-/m/03h64": 9,
+        "/m/01bl7g-/film/film/genre-/m/01jfsb": 10,
+        "/m/01bl7g-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/09vw2b7": 11,
+        "/m/01bl7g-/film/film/featured_film_locations-/m/02_286": 12,
+        "/m/01bl7g-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/0ch6mp2": 13,
+        "/m/01bl7g-/film/film/production_companies-/m/05rrtf": 14,
+        "/m/01bl7g-/film/film/country-/m/07ssc": 15,
+        "/m/01bl7g-/film/film/genre-/m/05p553": 16,
+        "/m/01bl7g-/film/film/genre-/m/04xvh5": 17,
+        "/m/01bl7g-/film/film/estimated_budget./measurement_unit/dated_money_value/currency-/m/09nqf": 18,
+        "/m/01bl7g-/film/film/language-/m/02h40lc": 19,
+        "/m/01bl7g-/film/film/produced_by-/m/03h304l": 20
+    },
+    "bad_budget": [
+        [
+            "/m/06x43v",
+            "/film/film/estimated_budget./measurement_unit/dated_money_value/currency",
+            "/m/09nqf"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/genre",
+            "/m/0lsxr"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/country",
+            "/m/09c7w0"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/genre",
+            "/m/0556j8"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/genre",
+            "/m/02kdv5l"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium",
+            "/m/029j_"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/01vx2h"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/language",
+            "/m/04h9h"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/language",
+            "/m/064_8sq"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/featured_film_locations",
+            "/m/030qb3t"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/09zzb8"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/executive_produced_by",
+            "/m/03c9pqt"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/featured_film_locations",
+            "/m/02_286"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/genre",
+            "/m/05p553"
+        ],
+        [
+            "/m/06x43v",
+            "/common/topic/webpage./common/webpage/category",
+            "/m/08mbj5d"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/other_crew./film/film_crew_gig/film_crew_role",
+            "/m/0dxtw"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/language",
+            "/m/02h40lc"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/produced_by",
+            "/m/03h40_7"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/language",
+            "/m/03_9r"
+        ],
+        [
+            "/m/06x43v",
+            "/film/film/release_date_s./film/film_regional_release_date/film_release_region",
+            "/m/09c7w0"
+        ]
+    ],
+    "bad_budget_costs": {
+        "/m/06x43v-/film/film/featured_film_locations-/m/030qb3t": 1,
+        "/m/06x43v-/film/film/genre-/m/0lsxr": 2,
+        "/m/06x43v-/film/film/release_date_s./film/film_regional_release_date/film_release_distribution_medium-/m/029j_": 3,
+        "/m/06x43v-/film/film/language-/m/02h40lc": 4,
+        "/m/06x43v-/film/film/language-/m/064_8sq": 5,
+        "/m/06x43v-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/0dxtw": 6,
+        "/m/06x43v-/common/topic/webpage./common/webpage/category-/m/08mbj5d": 7,
+        "/m/06x43v-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/01vx2h": 8,
+        "/m/06x43v-/film/film/executive_produced_by-/m/03c9pqt": 9,
+        "/m/06x43v-/film/film/country-/m/09c7w0": 10,
+        "/m/06x43v-/film/film/release_date_s./film/film_regional_release_date/film_release_region-/m/09c7w0": 11,
+        "/m/06x43v-/film/film/language-/m/04h9h": 12,
+        "/m/06x43v-/film/film/featured_film_locations-/m/02_286": 13,
+        "/m/06x43v-/film/film/produced_by-/m/03h40_7": 14,
+        "/m/06x43v-/film/film/genre-/m/0556j8": 15,
+        "/m/06x43v-/film/film/genre-/m/05p553": 16,
+        "/m/06x43v-/film/film/estimated_budget./measurement_unit/dated_money_value/currency-/m/09nqf": 17,
+        "/m/06x43v-/film/film/genre-/m/02kdv5l": 18,
+        "/m/06x43v-/film/film/other_crew./film/film_crew_gig/film_crew_role-/m/09zzb8": 19,
+        "/m/06x43v-/film/film/language-/m/03_9r": 20
+    },
+    "overlapping_budget": []
+}

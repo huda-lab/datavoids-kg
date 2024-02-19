@@ -1,0 +1,180 @@
+{
+  "good_budget": [
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+      "/m/01bl7g"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/award",
+      "/m/0dgr5xp"
+    ],
+    [
+      "/m/01900g",
+      "/award/award_winner/awards_won./award/award_honor/award_winner",
+      "/m/012d40"
+    ],
+    [
+      "/m/01f6x7",
+      "/film/film/executive_produced_by",
+      "/m/012d40"
+    ]
+  ],
+  "good_budget_costs": {
+    "/m/01f6x7-/film/film/executive_produced_by-/m/012d40": 1,
+    "/m/01900g-/award/award_winner/awards_won./award/award_honor/award_winner-/m/012d40": 2,
+    "/m/012d40-/award/award_nominee/award_nominations./award/award_nomination/award-/m/0dgr5xp": 3,
+    "/m/012d40-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/01bl7g": 4
+  },
+  "bad_budget": [
+    [
+      "/m/012d40",
+      "/film/actor/film./film/performance/film",
+      "/m/09146g"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/profession",
+      "/m/01d_h8"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+      "/m/02_sr1"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+      "/m/02gpkt"
+    ]
+  ],
+  "bad_budget_costs": {
+    "/m/012d40-/people/person/profession-/m/01d_h8": 1,
+    "/m/012d40-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/02gpkt": 2,
+    "/m/012d40-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/02_sr1": 3,
+    "/m/012d40-/film/actor/film./film/performance/film-/m/09146g": 4
+  },
+  "overlapping_budget": [
+    [
+      "/m/012d40",
+      "/people/person/spouse_s./people/marriage/location_of_ceremony",
+      "/m/030qb3t"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/award",
+      "/m/05ztrmj"
+    ],
+    [
+      "/m/02_sr1",
+      "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+      "/m/012d40"
+    ],
+    [
+      "/m/012d40",
+      "/film/actor/film./film/performance/film",
+      "/m/02gpkt"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/gender",
+      "/m/05zppz"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/languages",
+      "/m/012w70"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/profession",
+      "/m/02jknp"
+    ],
+    [
+      "/m/012d40",
+      "/film/actor/film./film/performance/film",
+      "/m/01f6x7"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/places_lived./people/place_lived/location",
+      "/m/0k049"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/award",
+      "/m/09v0wy2"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/profession",
+      "/m/02hrh1q"
+    ],
+    [
+      "/m/012d40",
+      "/film/actor/film./film/performance/film",
+      "/m/034qmv"
+    ],
+    [
+      "/m/09v0wy2",
+      "/award/award_category/winners./award/award_honor/award_winner",
+      "/m/012d40"
+    ],
+    [
+      "/m/01bl7g",
+      "/film/film/executive_produced_by",
+      "/m/012d40"
+    ],
+    [
+      "/m/012d40",
+      "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+      "/m/06x43v"
+    ],
+    [
+      "/m/01900g",
+      "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+      "/m/012d40"
+    ],
+    [
+      "/m/05ztrmj",
+      "/award/award_category/winners./award/award_honor/award_winner",
+      "/m/012d40"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/nationality",
+      "/m/03h64"
+    ],
+    [
+      "/m/012d40",
+      "/people/person/spouse_s./people/marriage/type_of_union",
+      "/m/04ztj"
+    ],
+    [
+      "/m/02gpkt",
+      "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+      "/m/012d40"
+    ],
+    [
+      "/m/012d40",
+      "/film/actor/film./film/performance/film",
+      "/m/02_sr1"
+    ]
+  ],
+  "stats": {
+    "good_fact_num_budget": 4,
+    "bad_fact_num_budget": 4,
+    "good_entity_degree": 37,
+    "bad_entity_degree": 37,
+    "head_degree": 43,
+    "good_explanations_degree": {
+      "head": 43.75,
+      "tail": 33.25
+    },
+    "bad_explanations_degre": {
+      "head": 43,
+      "tail": 48.25
+    }
+  }
+}

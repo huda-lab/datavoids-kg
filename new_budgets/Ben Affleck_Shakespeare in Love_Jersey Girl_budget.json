@@ -1,0 +1,419 @@
+{
+    "good_budget": [
+        [
+            "/m/0lpjn",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/02cgb8"
+        ],
+        [
+            "/m/0170pk",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0dgskx"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/03t0k1"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/019f4v"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/03f1zdw"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0bq2g"
+        ],
+        [
+            "/m/0170pk",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/03f1zdw",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0m31m",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0dgskx",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/016xk5"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/016xk5"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/01tspc6"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0m31m"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/04kxsb"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/03y_46"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0170pk"
+        ],
+        [
+            "/m/016xk5",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/016xk5",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0bq2g",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/03y_46",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/03y_46",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0m313",
+            "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ]
+    ],
+    "good_budget_costs": {
+        "/m/0m31m-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 60,
+        "/m/0170pk-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 125,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01tspc6": 138,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/02cgb8": 2,
+        "/m/0lpjn-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 102,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03t0k1": 2,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0m31m": 138,
+        "/m/03y_46-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 61,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/03y_46": 138,
+        "/m/0dgskx-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 88,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/016xk5": 138,
+        "/m/03y_46-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 61,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/019f4v": 11,
+        "/m/0bq2g-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 124,
+        "/m/016xk5-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 63,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0dgskx": 138,
+        "/m/016xk5-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 63,
+        "/m/0170pk-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 125,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0170pk": 138,
+        "/m/03f1zdw-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 128,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0bq2g": 2,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/04kxsb": 11,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/016xk5": 2,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03f1zdw": 2,
+        "/m/0m313-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 127
+    },
+    "bad_budget": [
+        [
+            "/m/043zg",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/069nzr"
+        ],
+        [
+            "/m/0151w_",
+            "/people/person/profession",
+            "/m/03gjzk"
+        ],
+        [
+            "/m/05p09zm",
+            "/award/award_category/winners./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency",
+            "/m/09nqf"
+        ],
+        [
+            "/m/0151w_",
+            "/film/actor/film./film/performance/film",
+            "/m/01qvz8"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/02qzh2"
+        ],
+        [
+            "/m/07cbcy",
+            "/award/award_category/winners./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award",
+            "/m/05p09zm"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/01qvz8"
+        ],
+        [
+            "/m/043zg",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/film/actor/film./film/performance/film",
+            "/m/0h03fhx"
+        ],
+        [
+            "/m/01fwj8",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/043zg"
+        ],
+        [
+            "/m/011ypx",
+            "/film/film/written_by",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/01jfrg"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/043zg"
+        ],
+        [
+            "/m/07kh6f3",
+            "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/award_nominee",
+            "/m/01rh0w"
+        ],
+        [
+            "/m/01qvz8",
+            "/award/award_winning_work/awards_won./award/award_honor/award_winner",
+            "/m/0151w_"
+        ],
+        [
+            "/m/0151w_",
+            "/film/actor/film./film/performance/film",
+            "/m/0p9lw"
+        ],
+        [
+            "/m/0151w_",
+            "/celebrities/celebrity/celebrity_friends./celebrities/friendship/friend",
+            "/m/02mjmr"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_nominee/award_nominations./award/award_nomination/nominated_for",
+            "/m/048vhl"
+        ],
+        [
+            "/m/0151w_",
+            "/award/award_winner/awards_won./award/award_honor/award_winner",
+            "/m/034g2b"
+        ],
+        [
+            "/m/02jp5r",
+            "/award/award_ceremony/awards_presented./award/award_honor/award_winner",
+            "/m/0151w_"
+        ]
+    ],
+    "bad_budget_costs": {
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/069nzr": 138,
+        "/m/07kh6f3-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 47,
+        "/m/043zg-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 86,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01jfrg": 138,
+        "/m/0151w_-/celebrities/celebrity/celebrity_friends./celebrities/friendship/friend-/m/02mjmr": 46,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/043zg": 138,
+        "/m/043zg-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 86,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/034g2b": 2,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/043zg": 2,
+        "/m/011ypx-/film/film/written_by-/m/0151w_": 63,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01rh0w": 138,
+        "/m/0151w_-/base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency-/m/09nqf": 59,
+        "/m/07cbcy-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 128,
+        "/m/01qvz8-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 36,
+        "/m/02jp5r-/award/award_ceremony/awards_presented./award/award_honor/award_winner-/m/0151w_": 42,
+        "/m/01fwj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 12,
+        "/m/05p09zm-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 51,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/01qvz8": 3,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/05p09zm": 11,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/048vhl": 3,
+        "/m/0151w_-/people/person/profession-/m/03gjzk": 122,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/02qzh2": 3,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0h03fhx": 35,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/01qvz8": 35,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0p9lw": 35
+    },
+    "good_budget_degrees": {
+        "/m/0m31m-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 60,
+        "/m/0170pk-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 125,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01tspc6": 138,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/02cgb8": 2,
+        "/m/0lpjn-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 102,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03t0k1": 2,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0m31m": 138,
+        "/m/03y_46-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 61,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/03y_46": 138,
+        "/m/0dgskx-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 88,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/016xk5": 138,
+        "/m/03y_46-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 61,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/019f4v": 11,
+        "/m/0bq2g-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 124,
+        "/m/016xk5-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 63,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0dgskx": 138,
+        "/m/016xk5-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 63,
+        "/m/0170pk-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 125,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0170pk": 138,
+        "/m/03f1zdw-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 128,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0bq2g": 2,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/04kxsb": 11,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/016xk5": 2,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03f1zdw": 2,
+        "/m/0m313-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 127
+    },
+    "bad_budget_degrees": {
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/069nzr": 138,
+        "/m/07kh6f3-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 47,
+        "/m/043zg-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 86,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01jfrg": 138,
+        "/m/0151w_-/celebrities/celebrity/celebrity_friends./celebrities/friendship/friend-/m/02mjmr": 46,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/043zg": 138,
+        "/m/043zg-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 86,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/034g2b": 2,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/043zg": 2,
+        "/m/011ypx-/film/film/written_by-/m/0151w_": 63,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01rh0w": 138,
+        "/m/0151w_-/base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency-/m/09nqf": 59,
+        "/m/07cbcy-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 128,
+        "/m/01qvz8-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 36,
+        "/m/02jp5r-/award/award_ceremony/awards_presented./award/award_honor/award_winner-/m/0151w_": 42,
+        "/m/01fwj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 12,
+        "/m/05p09zm-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 51,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/01qvz8": 3,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/05p09zm": 11,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/048vhl": 3,
+        "/m/0151w_-/people/person/profession-/m/03gjzk": 122,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/02qzh2": 3,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0h03fhx": 35,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/01qvz8": 35,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0p9lw": 35
+    },
+    "overlapping_budget": [],
+    "good_budget_relevance": {
+        "/m/0m31m-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.503335903260444,
+        "/m/0170pk-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5035991047065851,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01tspc6": 0.5036385609144314,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/02cgb8": 0.5037131818962096,
+        "/m/0lpjn-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5041213294275028,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03t0k1": 0.5041278854922603,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0m31m": 0.5042062005554286,
+        "/m/03y_46-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5044492500821713,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/03y_46": 0.5044702292479546,
+        "/m/0dgskx-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5046413995740319,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/016xk5": 0.5047749021392486,
+        "/m/03y_46-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5047952850607471,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/019f4v": 0.5048118536226215,
+        "/m/0bq2g-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5048161447592272,
+        "/m/016xk5-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5048915971280491,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0dgskx": 0.5050160394090868,
+        "/m/016xk5-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5052239186072461,
+        "/m/0170pk-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5052655180716541,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0170pk": 0.5052699283257942,
+        "/m/03f1zdw-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5053319101887999,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0bq2g": 0.5054056922311347,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/04kxsb": 0.5056310895347408,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/016xk5": 0.5063893893053738,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/03f1zdw": 0.5065029768749455,
+        "/m/0m313-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5224866473845737
+    },
+    "bad_budget_relevance": {
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/069nzr": 0.49966144566941545,
+        "/m/07kh6f3-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5000206232070806,
+        "/m/043zg-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5003900527162861,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01jfrg": 0.5004485844362225,
+        "/m/0151w_-/celebrities/celebrity/celebrity_friends./celebrities/friendship/friend-/m/02mjmr": 0.5005851981351978,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/043zg": 0.5006221529610727,
+        "/m/043zg-/award/award_winner/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5007659190862794,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/034g2b": 0.5013105839278442,
+        "/m/0151w_-/award/award_winner/awards_won./award/award_honor/award_winner-/m/043zg": 0.5014222821974575,
+        "/m/011ypx-/film/film/written_by-/m/0151w_": 0.5019035247391419,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/01rh0w": 0.5033456779857891,
+        "/m/0151w_-/base/schemastaging/person_extra/net_worth./measurement_unit/dated_money_value/currency-/m/09nqf": 0.5056633911311095,
+        "/m/07cbcy-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 0.5060674549886864,
+        "/m/01qvz8-/award/award_winning_work/awards_won./award/award_honor/award_winner-/m/0151w_": 0.5063200207058245,
+        "/m/02jp5r-/award/award_ceremony/awards_presented./award/award_honor/award_winner-/m/0151w_": 0.506567696460336,
+        "/m/01fwj8-/award/award_nominee/award_nominations./award/award_nomination/award_nominee-/m/0151w_": 0.5065974936173098,
+        "/m/05p09zm-/award/award_category/winners./award/award_honor/award_winner-/m/0151w_": 0.5068200172891635,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/01qvz8": 0.5076075881399056,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/award-/m/05p09zm": 0.5080250762061568,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/048vhl": 0.5103985572552459,
+        "/m/0151w_-/people/person/profession-/m/03gjzk": 0.510939878413243,
+        "/m/0151w_-/award/award_nominee/award_nominations./award/award_nomination/nominated_for-/m/02qzh2": 0.5314354571241773,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0h03fhx": 1.4945673696342072,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/01qvz8": 1.5205417815190012,
+        "/m/0151w_-/film/actor/film./film/performance/film-/m/0p9lw": 1.5225423242118659
+    }
+}

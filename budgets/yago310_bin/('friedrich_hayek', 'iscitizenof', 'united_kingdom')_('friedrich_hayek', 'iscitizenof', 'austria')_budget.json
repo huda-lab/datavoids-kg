@@ -1,0 +1,256 @@
+{
+    "good_budget": [
+        [
+            "friedrich_hayek",
+            "influences",
+            "margaret_thatcher"
+        ],
+        [
+            "friedrich_hayek",
+            "playsfor",
+            "leyton_orient_f.c."
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "hannes_h\u00f3lmsteinn_gissurarson"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "george_stigler"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "thomas_sowell"
+        ],
+        [
+            "friedrich_hayek",
+            "haswonprize",
+            "nobel_memorial_prize_in_economic_sciences"
+        ],
+        [
+            "john_stuart_mill",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "henry_hazlitt"
+        ],
+        [
+            "john_locke",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "ronald_coase"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "nassim_nicholas_taleb"
+        ],
+        [
+            "friedrich_hayek",
+            "haswonprize",
+            "presidential_medal_of_freedom"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "niall_ferguson"
+        ],
+        [
+            "david_hume",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "ismarriedto",
+            "basil_sydney"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "peter_boettke"
+        ],
+        [
+            "edmund_burke",
+            "influences",
+            "friedrich_hayek"
+        ]
+    ],
+    "good_budget_costs": {
+        "friedrich_hayek-influences-hannes_h\u00f3lmsteinn_gissurarson": 1,
+        "friedrich_hayek-influences-thomas_sowell": 2,
+        "friedrich_hayek-influences-george_stigler": 3,
+        "friedrich_hayek-influences-henry_hazlitt": 4,
+        "friedrich_hayek-influences-ronald_coase": 5,
+        "friedrich_hayek-influences-nassim_nicholas_taleb": 6,
+        "friedrich_hayek-influences-margaret_thatcher": 7,
+        "friedrich_hayek-ismarriedto-basil_sydney": 8,
+        "friedrich_hayek-influences-peter_boettke": 9,
+        "john_locke-influences-friedrich_hayek": 10,
+        "friedrich_hayek-influences-niall_ferguson": 11,
+        "david_hume-influences-friedrich_hayek": 12,
+        "edmund_burke-influences-friedrich_hayek": 13,
+        "john_stuart_mill-influences-friedrich_hayek": 14,
+        "friedrich_hayek-haswonprize-presidential_medal_of_freedom": 15,
+        "friedrich_hayek-haswonprize-nobel_memorial_prize_in_economic_sciences": 16,
+        "friedrich_hayek-playsfor-leyton_orient_f.c.": 17
+    },
+    "bad_budget": [
+        [
+            "friedrich_hayek",
+            "influences",
+            "elinor_ostrom"
+        ],
+        [
+            "carl_menger",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "ernst_mach",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "james_m._buchanan"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "ronald_reagan"
+        ],
+        [
+            "friedrich_von_wieser",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "vernon_l._smith"
+        ],
+        [
+            "eugen_b\u00f6hm_von_bawerk",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "adam_smith",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "wasbornin",
+            "vienna"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "peter_g._klein"
+        ],
+        [
+            "friedrich_hayek",
+            "haswonprize",
+            "pour_le_m\u00e9rite"
+        ],
+        [
+            "friedrich_hayek",
+            "graduatedfrom",
+            "university_of_vienna"
+        ],
+        [
+            "frank_fetter",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "ludwig_von_mises",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "konrad_lorenz"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "murray_rothbard"
+        ]
+    ],
+    "bad_budget_costs": {
+        "frank_fetter-influences-friedrich_hayek": 1,
+        "friedrich_hayek-influences-vernon_l._smith": 2,
+        "friedrich_hayek-influences-james_m._buchanan": 3,
+        "adam_smith-influences-friedrich_hayek": 4,
+        "friedrich_hayek-influences-elinor_ostrom": 5,
+        "friedrich_hayek-influences-murray_rothbard": 6,
+        "friedrich_hayek-influences-ronald_reagan": 7,
+        "ludwig_von_mises-influences-friedrich_hayek": 8,
+        "friedrich_hayek-influences-konrad_lorenz": 9,
+        "friedrich_von_wieser-influences-friedrich_hayek": 10,
+        "eugen_b\u00f6hm_von_bawerk-influences-friedrich_hayek": 11,
+        "friedrich_hayek-influences-peter_g._klein": 12,
+        "carl_menger-influences-friedrich_hayek": 13,
+        "ernst_mach-influences-friedrich_hayek": 14,
+        "friedrich_hayek-haswonprize-pour_le_m\u00e9rite": 15,
+        "friedrich_hayek-graduatedfrom-university_of_vienna": 16,
+        "friedrich_hayek-wasbornin-vienna": 17
+    },
+    "overlapping_budget": [
+        [
+            "karl_popper",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "diedin",
+            "freiburg"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "ludwig_erhard"
+        ],
+        [
+            "friedrich_hayek",
+            "hasgender",
+            "male"
+        ],
+        [
+            "ludwig_wittgenstein",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "alexis_de_tocqueville",
+            "influences",
+            "friedrich_hayek"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "john_hicks"
+        ],
+        [
+            "friedrich_hayek",
+            "influences",
+            "karl_popper"
+        ]
+    ]
+}

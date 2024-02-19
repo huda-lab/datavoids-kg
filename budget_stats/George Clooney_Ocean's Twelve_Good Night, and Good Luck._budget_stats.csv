@@ -1,0 +1,43 @@
+,budget_degrees,budget_relevance,budget_costs,claim
+Mark Wahlberg /award/award_winner/awards_won./award/award_honor/award_winner George Clooney,75,0.5007973902617966,75,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Argo /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney,57,0.5009384144254907,57,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /base/popstra/celebrity/dated./base/popstra/dated/participant Julia Roberts,2,0.5015349339904435,2,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /base/popstra/celebrity/friendship./base/popstra/friendship/participant Guy Ritchie,2,0.5024025255311009,2,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Nicole Kidman /base/popstra/celebrity/friendship./base/popstra/friendship/participant George Clooney,14,0.5024987251164847,14,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+The Informant! /film/film/executive_produced_by George Clooney,32,0.504036934868147,32,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Bernie Mac /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,34,0.5059349133557632,34,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Bernie Mac,67,0.5060297903659798,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Casey Affleck,67,0.5077925570767092,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Elliott Gould /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,36,0.5079664402344956,36,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Elliott Gould,67,0.5079932554927329,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Carl Reiner,67,0.5082786861382188,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Ocean's Thirteen,2,0.5084095414844317,2,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Julia Roberts,67,0.5086183355995658,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Ocean's Thirteen /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney,35,0.5092238451042849,35,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+Casey Affleck /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,49,0.5110162547310704,49,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Catherine Zeta-Jones,67,0.5136534594619309,67,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Ocean's Eleven,2,0.5173439506951754,2,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /film/actor/film./film/performance/film Three Kings,15,1.5033831080079112,15,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /film/actor/film./film/performance/film Ocean's Thirteen,15,1.5231499738904084,15,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /film/actor/film./film/performance/film Ocean's Eleven,15,1.5283903553501754,15,George Clooney /film/actor/film./film/performance/film Ocean's Twelve
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Grant Heslov,67,0.5038003189672504,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Frank Langella,67,0.5038035374319703,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Peter Jacobson /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,42,0.5038063982892345,42,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Patricia Clarkson /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,78,0.5045208891002861,78,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Tate Donovan,67,0.5047651278671644,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Patricia Clarkson,67,0.5048418915639385,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Tom McCarthy /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,53,0.5050342765880835,53,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Ray Wise /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,28,0.5054460994213035,28,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Peter Jacobson,67,0.5055070080600681,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Frank Langella /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,56,0.5055935433396805,56,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Tate Donovan /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,66,0.5057011755952576,66,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+Alex Borstein /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,51,0.5065747285935959,51,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Jeff Daniels,67,0.5073073667494329,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+David Strathairn /award/award_nominee/award_nominations./award/award_nomination/award_nominee George Clooney,66,0.507598172783508,66,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee Alex Borstein,67,0.5077762293626291,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+"George Clooney /film/director/film Good Night, and Good Luck.",21,0.5089499926439263,21,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /award/award_nominee/award_nominations./award/award_nomination/award_nominee David Strathairn,67,0.5090765517691981,67,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+"Good Night, and Good Luck. /film/film/written_by George Clooney",71,0.5095227169230397,71,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+George Clooney /film/actor/film./film/performance/film Syriana,15,0.5134572660710959,15,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+"Good Night, and Good Luck. /award/award_winning_work/awards_won./award/award_honor/award_winner George Clooney",71,0.5176622066361027,71,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."
+"George Clooney /award/award_nominee/award_nominations./award/award_nomination/nominated_for Good Night, and Good Luck.",2,0.5183365329494838,2,"George Clooney /film/actor/film./film/performance/film Good Night, and Good Luck."

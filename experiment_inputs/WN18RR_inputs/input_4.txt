@@ -1,0 +1,2 @@
+trade_name.n.01-_member_of_domain_usage-cephalosporin.n.01
+trade_name.n.01-_member_of_domain_usage-gallamine.n.01

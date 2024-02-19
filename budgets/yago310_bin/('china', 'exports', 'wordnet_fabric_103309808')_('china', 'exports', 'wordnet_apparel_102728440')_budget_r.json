@@ -1,0 +1,554 @@
+{
+    "good_budget": [
+        [
+            "china",
+            "participatedin",
+            "soviet_war_in_afghanistan"
+        ],
+        [
+            "china",
+            "hasneighbor",
+            "kyrgyzstan"
+        ],
+        [
+            "tajikistan",
+            "hasneighbor",
+            "china"
+        ],
+        [
+            "the_gambia",
+            "dealswith",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "laotian_civil_war"
+        ],
+        [
+            "kashmir_conflict",
+            "happenedin",
+            "china"
+        ],
+        [
+            "burma",
+            "hasneighbor",
+            "china"
+        ],
+        [
+            "somalia",
+            "dealswith",
+            "china"
+        ],
+        [
+            "iraq",
+            "dealswith",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "mozambican_war_of_independence"
+        ],
+        [
+            "wales",
+            "dealswith",
+            "china"
+        ],
+        [
+            "china",
+            "hasneighbor",
+            "tajikistan"
+        ],
+        [
+            "china",
+            "hasneighbor",
+            "burma"
+        ],
+        [
+            "mauritania",
+            "dealswith",
+            "china"
+        ],
+        [
+            "bahrain",
+            "dealswith",
+            "china"
+        ],
+        [
+            "belarus",
+            "dealswith",
+            "china"
+        ],
+        [
+            "bhutan",
+            "hasneighbor",
+            "china"
+        ],
+        [
+            "angola",
+            "dealswith",
+            "china"
+        ],
+        [
+            "north_korea",
+            "dealswith",
+            "china"
+        ],
+        [
+            "macau",
+            "dealswith",
+            "china"
+        ],
+        [
+            "albania",
+            "dealswith",
+            "china"
+        ],
+        [
+            "kyrgyzstan",
+            "hasneighbor",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "operation_enduring_freedom"
+        ],
+        [
+            "zambia",
+            "dealswith",
+            "china"
+        ],
+        [
+            "afghanistan",
+            "dealswith",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "battle_of_heartbreak_ridge"
+        ],
+        [
+            "burma",
+            "dealswith",
+            "china"
+        ],
+        [
+            "bangladesh",
+            "dealswith",
+            "china"
+        ],
+        [
+            "benin",
+            "dealswith",
+            "china"
+        ],
+        [
+            "republic_of_the_congo",
+            "dealswith",
+            "china"
+        ],
+        [
+            "eritrea",
+            "dealswith",
+            "china"
+        ],
+        [
+            "oman",
+            "dealswith",
+            "china"
+        ],
+        [
+            "burundi",
+            "dealswith",
+            "china"
+        ],
+        [
+            "egypt",
+            "dealswith",
+            "china"
+        ],
+        [
+            "uzbekistan",
+            "dealswith",
+            "china"
+        ],
+        [
+            "syria",
+            "dealswith",
+            "china"
+        ],
+        [
+            "tajikistan",
+            "dealswith",
+            "china"
+        ],
+        [
+            "ethiopia",
+            "dealswith",
+            "china"
+        ],
+        [
+            "moldova",
+            "dealswith",
+            "china"
+        ],
+        [
+            "qatar",
+            "dealswith",
+            "china"
+        ],
+        [
+            "mozambique",
+            "dealswith",
+            "china"
+        ],
+        [
+            "macau",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "central_african_republic",
+            "dealswith",
+            "china"
+        ],
+        [
+            "saudi_arabia",
+            "dealswith",
+            "china"
+        ]
+    ],
+    "good_budget_costs": {
+        "kashmir_conflict-happenedin-china": 6,
+        "china-participatedin-soviet_war_in_afghanistan": 21,
+        "china-participatedin-mozambican_war_of_independence": 21,
+        "mauritania-dealswith-china": 47,
+        "china-participatedin-laotian_civil_war": 21,
+        "china-participatedin-battle_of_heartbreak_ridge": 21,
+        "republic_of_the_congo-dealswith-china": 33,
+        "benin-dealswith-china": 43,
+        "wales-dealswith-china": 69,
+        "bahrain-dealswith-china": 25,
+        "bangladesh-dealswith-china": 60,
+        "china-hasneighbor-tajikistan": 29,
+        "tajikistan-hasneighbor-china": 50,
+        "oman-dealswith-china": 34,
+        "syria-dealswith-china": 97,
+        "egypt-dealswith-china": 93,
+        "burma-hasneighbor-china": 71,
+        "tajikistan-dealswith-china": 50,
+        "belarus-dealswith-china": 80,
+        "macau-islocatedin-china": 24,
+        "macau-dealswith-china": 24,
+        "saudi_arabia-dealswith-china": 100,
+        "qatar-dealswith-china": 30,
+        "mozambique-dealswith-china": 55,
+        "iraq-dealswith-china": 91,
+        "angola-dealswith-china": 63,
+        "burma-dealswith-china": 71,
+        "bhutan-hasneighbor-china": 13,
+        "china-hasneighbor-burma": 29,
+        "china-hasneighbor-kyrgyzstan": 29,
+        "kyrgyzstan-hasneighbor-china": 33,
+        "the_gambia-dealswith-china": 19,
+        "central_african_republic-dealswith-china": 39,
+        "north_korea-dealswith-china": 32,
+        "afghanistan-dealswith-china": 66,
+        "ethiopia-dealswith-china": 61,
+        "zambia-dealswith-china": 54,
+        "albania-dealswith-china": 44,
+        "burundi-dealswith-china": 43,
+        "somalia-dealswith-china": 44,
+        "moldova-dealswith-china": 43,
+        "uzbekistan-dealswith-china": 47,
+        "eritrea-dealswith-china": 43,
+        "china-participatedin-operation_enduring_freedom": 21
+    },
+    "bad_budget": [
+        [
+            "china",
+            "participatedin",
+            "ethio-somali_war"
+        ],
+        [
+            "red_river_(asia)",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "cambodian\u2013vietnamese_war"
+        ],
+        [
+            "nicaragua",
+            "dealswith",
+            "china"
+        ],
+        [
+            "affymetrix",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "barbados",
+            "dealswith",
+            "china"
+        ],
+        [
+            "sino-french_war",
+            "happenedin",
+            "china"
+        ],
+        [
+            "comoros",
+            "dealswith",
+            "china"
+        ],
+        [
+            "guyana",
+            "dealswith",
+            "china"
+        ],
+        [
+            "the_bahamas",
+            "dealswith",
+            "china"
+        ],
+        [
+            "dominican_republic",
+            "dealswith",
+            "china"
+        ],
+        [
+            "costa_rica",
+            "dealswith",
+            "china"
+        ],
+        [
+            "belize",
+            "dealswith",
+            "china"
+        ],
+        [
+            "little_vietnam",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "the_white_countess",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "togo",
+            "dealswith",
+            "china"
+        ],
+        [
+            "jamaica",
+            "dealswith",
+            "china"
+        ],
+        [
+            "haiti",
+            "dealswith",
+            "china"
+        ],
+        [
+            "panama",
+            "dealswith",
+            "china"
+        ]
+    ],
+    "bad_budget_costs": {
+        "togo-dealswith-china": 30,
+        "china-participatedin-ethio-somali_war": 21,
+        "little_vietnam-islocatedin-china": 32,
+        "affymetrix-islocatedin-china": 9,
+        "comoros-dealswith-china": 25,
+        "jamaica-dealswith-china": 29,
+        "haiti-dealswith-china": 26,
+        "the_white_countess-islocatedin-china": 7,
+        "costa_rica-dealswith-china": 39,
+        "red_river_(asia)-islocatedin-china": 9,
+        "panama-dealswith-china": 41,
+        "china-participatedin-cambodian\u2013vietnamese_war": 21,
+        "belize-dealswith-china": 26,
+        "sino-french_war-happenedin-china": 8,
+        "the_bahamas-dealswith-china": 25,
+        "guyana-dealswith-china": 32,
+        "nicaragua-dealswith-china": 39,
+        "dominican_republic-dealswith-china": 44,
+        "barbados-dealswith-china": 25
+    },
+    "good_budget_degrees": {
+        "kashmir_conflict-happenedin-china": 6,
+        "china-participatedin-soviet_war_in_afghanistan": 21,
+        "china-participatedin-mozambican_war_of_independence": 21,
+        "mauritania-dealswith-china": 47,
+        "china-participatedin-laotian_civil_war": 21,
+        "china-participatedin-battle_of_heartbreak_ridge": 21,
+        "republic_of_the_congo-dealswith-china": 33,
+        "benin-dealswith-china": 43,
+        "wales-dealswith-china": 69,
+        "bahrain-dealswith-china": 25,
+        "bangladesh-dealswith-china": 60,
+        "china-hasneighbor-tajikistan": 29,
+        "tajikistan-hasneighbor-china": 50,
+        "oman-dealswith-china": 34,
+        "syria-dealswith-china": 97,
+        "egypt-dealswith-china": 93,
+        "burma-hasneighbor-china": 71,
+        "tajikistan-dealswith-china": 50,
+        "belarus-dealswith-china": 80,
+        "macau-islocatedin-china": 24,
+        "macau-dealswith-china": 24,
+        "saudi_arabia-dealswith-china": 100,
+        "qatar-dealswith-china": 30,
+        "mozambique-dealswith-china": 55,
+        "iraq-dealswith-china": 91,
+        "angola-dealswith-china": 63,
+        "burma-dealswith-china": 71,
+        "bhutan-hasneighbor-china": 13,
+        "china-hasneighbor-burma": 29,
+        "china-hasneighbor-kyrgyzstan": 29,
+        "kyrgyzstan-hasneighbor-china": 33,
+        "the_gambia-dealswith-china": 19,
+        "central_african_republic-dealswith-china": 39,
+        "north_korea-dealswith-china": 32,
+        "afghanistan-dealswith-china": 66,
+        "ethiopia-dealswith-china": 61,
+        "zambia-dealswith-china": 54,
+        "albania-dealswith-china": 44,
+        "burundi-dealswith-china": 43,
+        "somalia-dealswith-china": 44,
+        "moldova-dealswith-china": 43,
+        "uzbekistan-dealswith-china": 47,
+        "eritrea-dealswith-china": 43,
+        "china-participatedin-operation_enduring_freedom": 21
+    },
+    "bad_budget_degrees": {
+        "togo-dealswith-china": 30,
+        "china-participatedin-ethio-somali_war": 21,
+        "little_vietnam-islocatedin-china": 32,
+        "affymetrix-islocatedin-china": 9,
+        "comoros-dealswith-china": 25,
+        "jamaica-dealswith-china": 29,
+        "haiti-dealswith-china": 26,
+        "the_white_countess-islocatedin-china": 7,
+        "costa_rica-dealswith-china": 39,
+        "red_river_(asia)-islocatedin-china": 9,
+        "panama-dealswith-china": 41,
+        "china-participatedin-cambodian\u2013vietnamese_war": 21,
+        "belize-dealswith-china": 26,
+        "sino-french_war-happenedin-china": 8,
+        "the_bahamas-dealswith-china": 25,
+        "guyana-dealswith-china": 32,
+        "nicaragua-dealswith-china": 39,
+        "dominican_republic-dealswith-china": 44,
+        "barbados-dealswith-china": 25
+    },
+    "overlapping_budget": [
+        [
+            "kosovo",
+            "dealswith",
+            "china"
+        ],
+        [
+            "mekong",
+            "islocatedin",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "operation_ripper"
+        ],
+        [
+            "laos",
+            "dealswith",
+            "china"
+        ],
+        [
+            "china",
+            "participatedin",
+            "dhofar_rebellion"
+        ],
+        [
+            "turkmenistan",
+            "dealswith",
+            "china"
+        ]
+    ],
+    "good_budget_relevance": {
+        "kashmir_conflict-happenedin-china": 0.49889898478129907,
+        "china-participatedin-soviet_war_in_afghanistan": 0.4989330784778579,
+        "china-participatedin-mozambican_war_of_independence": 0.4992616181972851,
+        "mauritania-dealswith-china": 0.49929070520296753,
+        "china-participatedin-laotian_civil_war": 0.499648571072274,
+        "china-participatedin-battle_of_heartbreak_ridge": 0.4996936321641959,
+        "republic_of_the_congo-dealswith-china": 0.500098466871896,
+        "benin-dealswith-china": 0.5001156330088028,
+        "wales-dealswith-china": 0.5001881122500357,
+        "bahrain-dealswith-china": 0.5002002715957351,
+        "bangladesh-dealswith-china": 0.5004408358385316,
+        "china-hasneighbor-tajikistan": 0.5005090234905277,
+        "tajikistan-hasneighbor-china": 0.5008246891172696,
+        "oman-dealswith-china": 0.5010545238118259,
+        "syria-dealswith-china": 0.5013740028127366,
+        "egypt-dealswith-china": 0.5018002909109646,
+        "burma-hasneighbor-china": 0.5020081888934418,
+        "tajikistan-dealswith-china": 0.5021188132294916,
+        "belarus-dealswith-china": 0.5033268437566275,
+        "macau-islocatedin-china": 1.4992241865662066,
+        "macau-dealswith-china": 1.4999434947969934,
+        "saudi_arabia-dealswith-china": 1.5000131130218475,
+        "qatar-dealswith-china": 1.5011534670394575,
+        "mozambique-dealswith-china": 1.5011842228680767,
+        "iraq-dealswith-china": 1.501360651472154,
+        "angola-dealswith-china": 1.501528258332868,
+        "burma-dealswith-china": 1.5015511462994153,
+        "bhutan-hasneighbor-china": 1.5019197369655364,
+        "china-hasneighbor-burma": 1.501994122422603,
+        "china-hasneighbor-kyrgyzstan": 1.502041566947077,
+        "kyrgyzstan-hasneighbor-china": 1.5020921108221308,
+        "the_gambia-dealswith-china": 1.5024099163358806,
+        "central_african_republic-dealswith-china": 1.5024814401982134,
+        "north_korea-dealswith-china": 1.5026106597166853,
+        "afghanistan-dealswith-china": 1.502770633949178,
+        "ethiopia-dealswith-china": 1.5027920909573096,
+        "zambia-dealswith-china": 1.5029480115692155,
+        "albania-dealswith-china": 1.5031680636825135,
+        "burundi-dealswith-china": 1.5034784709492433,
+        "somalia-dealswith-china": 1.5036858844634216,
+        "moldova-dealswith-china": 1.504243033596201,
+        "uzbekistan-dealswith-china": 1.5042966738643595,
+        "eritrea-dealswith-china": 1.504764651073311,
+        "china-participatedin-operation_enduring_freedom": 1.506786406493202
+    },
+    "bad_budget_relevance": {
+        "togo-dealswith-china": 0.5015858358612892,
+        "china-participatedin-ethio-somali_war": 0.5017453361194083,
+        "little_vietnam-islocatedin-china": 0.5019966257778143,
+        "affymetrix-islocatedin-china": 0.5023206305763326,
+        "comoros-dealswith-china": 0.5030742496276579,
+        "jamaica-dealswith-china": 0.5031205010570069,
+        "haiti-dealswith-china": 0.5031764079968903,
+        "the_white_countess-islocatedin-china": 0.5035651318028687,
+        "costa_rica-dealswith-china": 0.5038342916344696,
+        "red_river_(asia)-islocatedin-china": 0.5050012589404973,
+        "panama-dealswith-china": 0.5054155854435358,
+        "china-participatedin-cambodian\u2013vietnamese_war": 0.5057813928689606,
+        "belize-dealswith-china": 0.505887117111646,
+        "sino-french_war-happenedin-china": 0.5067238330396725,
+        "the_bahamas-dealswith-china": 0.5070778171731276,
+        "guyana-dealswith-china": 0.507347650835626,
+        "nicaragua-dealswith-china": 0.5075207044572486,
+        "dominican_republic-dealswith-china": 0.5092225342482952,
+        "barbados-dealswith-china": 0.5103359992849187
+    }
+}

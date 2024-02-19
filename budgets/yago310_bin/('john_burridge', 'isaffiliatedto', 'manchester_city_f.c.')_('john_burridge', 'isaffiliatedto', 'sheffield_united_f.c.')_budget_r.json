@@ -1,0 +1,347 @@
+{
+    "good_budget": [
+        [
+            "john_burridge",
+            "playsfor",
+            "queen_of_the_south_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "queen_of_the_south_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "thurrock_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "blyth_spartans_a.f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "thurrock_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "dumbarton_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "dumbarton_f.c."
+        ]
+    ],
+    "good_budget_costs": {
+        "john_burridge-playsfor-thurrock_f.c.": 442413.3920089205,
+        "john_burridge-isaffiliatedto-thurrock_f.c.": 26489122129.84347,
+        "john_burridge-isaffiliatedto-blyth_spartans_a.f.c.": 26489122129.84347,
+        "john_burridge-playsfor-dumbarton_f.c.": 442413.3920089205,
+        "john_burridge-isaffiliatedto-dumbarton_f.c.": 26489122129.84347,
+        "john_burridge-isaffiliatedto-queen_of_the_south_f.c.": 26489122129.84347,
+        "john_burridge-playsfor-queen_of_the_south_f.c.": 442413.3920089205
+    },
+    "bad_budget": [
+        [
+            "john_burridge",
+            "playsfor",
+            "gateshead_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "enfield_1893_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "scarborough_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "falkirk_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "enfield_1893_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "gateshead_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "falkirk_f.c."
+        ]
+    ],
+    "bad_budget_costs": {
+        "john_burridge-playsfor-enfield_1893_f.c.": 442413.3920089205,
+        "john_burridge-isaffiliatedto-enfield_1893_f.c.": 26489122129.84347,
+        "john_burridge-playsfor-falkirk_f.c.": 442413.3920089205,
+        "john_burridge-isaffiliatedto-scarborough_f.c.": 26489122129.84347,
+        "john_burridge-playsfor-gateshead_f.c.": 442413.3920089205,
+        "john_burridge-isaffiliatedto-falkirk_f.c.": 26489122129.84347,
+        "john_burridge-isaffiliatedto-gateshead_f.c.": 26489122129.84347
+    },
+    "good_budget_degrees": {
+        "john_burridge-playsfor-thurrock_f.c.": 13,
+        "john_burridge-isaffiliatedto-thurrock_f.c.": 24,
+        "john_burridge-isaffiliatedto-blyth_spartans_a.f.c.": 24,
+        "john_burridge-playsfor-dumbarton_f.c.": 13,
+        "john_burridge-isaffiliatedto-dumbarton_f.c.": 24,
+        "john_burridge-isaffiliatedto-queen_of_the_south_f.c.": 24,
+        "john_burridge-playsfor-queen_of_the_south_f.c.": 13
+    },
+    "bad_budget_degrees": {
+        "john_burridge-playsfor-enfield_1893_f.c.": 13,
+        "john_burridge-isaffiliatedto-enfield_1893_f.c.": 24,
+        "john_burridge-playsfor-falkirk_f.c.": 13,
+        "john_burridge-isaffiliatedto-scarborough_f.c.": 24,
+        "john_burridge-playsfor-gateshead_f.c.": 13,
+        "john_burridge-isaffiliatedto-falkirk_f.c.": 24,
+        "john_burridge-isaffiliatedto-gateshead_f.c.": 24
+    },
+    "overlapping_budget": [
+        [
+            "john_burridge",
+            "playsfor",
+            "workington_a.f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "wolverhampton_wanderers_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "newcastle_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "dunfermline_athletic_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "southend_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "northampton_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "notts_county_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "grimsby_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "aston_villa_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "hibernian_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "derby_county_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "southampton_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "darlington_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "queens_park_rangers_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "lincoln_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "scarborough_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "blackpool_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "witton_albion_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "manchester_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "aberdeen_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "darlington_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "crystal_palace_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "wolverhampton_wanderers_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "workington_a.f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "sheffield_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "blyth_spartans_a.f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "southend_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "northampton_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "newcastle_united_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "dunfermline_athletic_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "notts_county_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "hibernian_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "aston_villa_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "derby_county_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "southampton_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "grimsby_town_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "lincoln_city_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "queens_park_rangers_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "blackpool_f.c."
+        ],
+        [
+            "john_burridge",
+            "hasgender",
+            "male"
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "witton_albion_f.c."
+        ],
+        [
+            "john_burridge",
+            "playsfor",
+            "aberdeen_f.c."
+        ],
+        [
+            "john_burridge",
+            "isaffiliatedto",
+            "crystal_palace_f.c."
+        ]
+    ],
+    "good_budget_relevance": {
+        "john_burridge-playsfor-thurrock_f.c.": -2.5293446524413716,
+        "john_burridge-isaffiliatedto-thurrock_f.c.": 0.4740158966126656,
+        "john_burridge-isaffiliatedto-blyth_spartans_a.f.c.": 0.47575624028036845,
+        "john_burridge-playsfor-dumbarton_f.c.": 1.4941408932061686,
+        "john_burridge-isaffiliatedto-dumbarton_f.c.": 2.4955350155420186,
+        "john_burridge-isaffiliatedto-queen_of_the_south_f.c.": 3.4956346667368936,
+        "john_burridge-playsfor-queen_of_the_south_f.c.": 3.498923780195981
+    },
+    "bad_budget_relevance": {
+        "john_burridge-playsfor-enfield_1893_f.c.": 0.49579642186345946,
+        "john_burridge-isaffiliatedto-enfield_1893_f.c.": 0.49953329576694766,
+        "john_burridge-playsfor-falkirk_f.c.": 0.5023536508280539,
+        "john_burridge-isaffiliatedto-scarborough_f.c.": 0.5082977543835628,
+        "john_burridge-playsfor-gateshead_f.c.": 0.5128277994706896,
+        "john_burridge-isaffiliatedto-falkirk_f.c.": 1.501027701837975,
+        "john_burridge-isaffiliatedto-gateshead_f.c.": 1.5066154910774314
+    }
+}

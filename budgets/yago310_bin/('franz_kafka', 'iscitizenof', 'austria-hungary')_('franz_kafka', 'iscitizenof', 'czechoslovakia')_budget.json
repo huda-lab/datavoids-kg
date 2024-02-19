@@ -1,0 +1,179 @@
+{
+    "good_budget": [
+        [
+            "franz_kafka",
+            "hasgender",
+            "male"
+        ],
+        [
+            "otto_gross",
+            "influences",
+            "franz_kafka"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "haruki_murakami"
+        ],
+        [
+            "gustave_flaubert",
+            "influences",
+            "franz_kafka"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "daniel_handler"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "k\u014db\u014d_abe"
+        ]
+    ],
+    "good_budget_costs": {
+        "franz_kafka-influences-haruki_murakami": 1,
+        "franz_kafka-influences-daniel_handler": 2,
+        "otto_gross-influences-franz_kafka": 3,
+        "franz_kafka-influences-k\u014db\u014d_abe": 4,
+        "gustave_flaubert-influences-franz_kafka": 5,
+        "franz_kafka-hasgender-male": 6
+    },
+    "bad_budget": [
+        [
+            "franz_kafka",
+            "influences",
+            "paul_georgescu"
+        ],
+        [
+            "peter_kropotkin",
+            "influences",
+            "franz_kafka"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "vladimir_colin"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "malcolm_lowry"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "harold_pinter"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "felix_aderca"
+        ]
+    ],
+    "bad_budget_costs": {
+        "peter_kropotkin-influences-franz_kafka": 1,
+        "franz_kafka-influences-harold_pinter": 2,
+        "franz_kafka-influences-malcolm_lowry": 3,
+        "franz_kafka-influences-paul_georgescu": 4,
+        "franz_kafka-influences-vladimir_colin": 5,
+        "franz_kafka-influences-felix_aderca": 6
+    },
+    "overlapping_budget": [
+        [
+            "franz_kafka",
+            "influences",
+            "mircea_c\u0103rt\u0103rescu"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "ismail_kadare"
+        ],
+        [
+            "franz_kafka",
+            "diedin",
+            "klosterneuburg"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "philip_roth"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "carlton_mellick_iii"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "joshua_ferris"
+        ],
+        [
+            "franz_kafka",
+            "wasbornin",
+            "prague"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "j._g._ballard"
+        ],
+        [
+            "knut_hamsun",
+            "influences",
+            "franz_kafka"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "jos\u00e9_saramago"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "heiner_m\u00fcller"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "robert_musil"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "thomas_bernhard"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "alice_munro"
+        ],
+        [
+            "octave_mirbeau",
+            "influences",
+            "franz_kafka"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "bruno_schulz"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "salman_rushdie"
+        ],
+        [
+            "franz_kafka",
+            "influences",
+            "barun_roy"
+        ],
+        [
+            "heinrich_von_kleist",
+            "influences",
+            "franz_kafka"
+        ]
+    ]
+}

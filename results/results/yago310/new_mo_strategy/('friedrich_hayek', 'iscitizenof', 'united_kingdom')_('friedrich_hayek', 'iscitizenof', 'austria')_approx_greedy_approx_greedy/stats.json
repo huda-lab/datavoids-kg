@@ -1,0 +1,15 @@
+{
+    "good_fact_num_budget": 17,
+    "bad_fact_num_budget": 17,
+    "good_entity_degree": 449,
+    "bad_entity_degree": 161,
+    "head_degree": 61,
+    "good_explanations_degree": {
+        "head": 55.470588235294116,
+        "tail": 30.58823529411765
+    },
+    "bad_explanations_degree": {
+        "head": 44.705882352941174,
+        "tail": 40.11764705882353
+    }
+}

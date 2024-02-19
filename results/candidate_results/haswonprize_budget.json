@@ -1,0 +1,271 @@
+{
+    "good_budget": [
+        [
+            "mokot\u00f3w",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "juliusz_r\u00f3mmel",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "edward_rydz-\u015bmig\u0142y",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "polish_socialist_party",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "battle_of_warsaw_(1656)",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "camp_of_national_unity",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "world_series_of_snooker_2008/2009",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "konstantin_rokossovsky",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "civic_platform",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "warsaw",
+            "islocatedin",
+            "lists_of_world_heritage_sites_in_europe"
+        ],
+        [
+            "polish_people's_republic",
+            "hascapital",
+            "warsaw"
+        ],
+        [
+            "nonpartisan_bloc_for_cooperation_with_the_government",
+            "islocatedin",
+            "warsaw"
+        ]
+    ],
+    "good_budget_costs": {
+        "mokot\u00f3w-islocatedin-warsaw": 1,
+        "edward_rydz-\u015bmig\u0142y-diedin-warsaw": 2,
+        "warsaw-islocatedin-lists_of_world_heritage_sites_in_europe": 3,
+        "civic_platform-islocatedin-warsaw": 4,
+        "konstantin_rokossovsky-wasbornin-warsaw": 5,
+        "polish_people's_republic-hascapital-warsaw": 6,
+        "juliusz_r\u00f3mmel-diedin-warsaw": 7,
+        "camp_of_national_unity-islocatedin-warsaw": 8,
+        "battle_of_warsaw_(1656)-islocatedin-warsaw": 9,
+        "world_series_of_snooker_2008/2009-islocatedin-warsaw": 10,
+        "polish_socialist_party-islocatedin-warsaw": 11,
+        "nonpartisan_bloc_for_cooperation_with_the_government-islocatedin-warsaw": 12
+    },
+    "bad_budget": [
+        [
+            "krzysztof_komeda",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "andrzej_ciechanowiecki",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "samuel_eilenberg",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "pl/tadeusz_mieczys\u0142aw_soko\u0142owski",
+            "livesin",
+            "warsaw"
+        ],
+        [
+            "edward_abramowski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "krzysztof_piesiewicz",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "augustus_ii_the_strong",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "bernard_blaut",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "maciej_tataj",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "stanis\u0142aw_terlecki",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "cezary_tryba\u0144ski",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "zbigniew_messner",
+            "diedin",
+            "warsaw"
+        ]
+    ],
+    "bad_budget_costs": {
+        "andrzej_ciechanowiecki-wasbornin-warsaw": 1,
+        "samuel_eilenberg-wasbornin-warsaw": 2,
+        "krzysztof_piesiewicz-wasbornin-warsaw": 3,
+        "augustus_ii_the_strong-diedin-warsaw": 4,
+        "bernard_blaut-diedin-warsaw": 5,
+        "zbigniew_messner-diedin-warsaw": 6,
+        "pl/tadeusz_mieczys\u0142aw_soko\u0142owski-livesin-warsaw": 7,
+        "krzysztof_komeda-diedin-warsaw": 8,
+        "maciej_tataj-wasbornin-warsaw": 9,
+        "edward_abramowski-diedin-warsaw": 10,
+        "stanis\u0142aw_terlecki-wasbornin-warsaw": 11,
+        "cezary_tryba\u0144ski-wasbornin-warsaw": 12
+    },
+    "overlapping_budget": [
+        [
+            "w\u0142adys\u0142aw_bartoszewski",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "antoni_lange",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "sigismund_iii_vasa",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "henryk_jab\u0142o\u0144ski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "john_maurice_hauke",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "piotr_jaroszewicz",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "florian_siwicki",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "adam_jerzy_czartoryski",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "j\u00f3zef_pi\u0142sudski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "jerzy_kawalerowicz",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "jaros\u0142aw_kaczy\u0144ski",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "antoni_g\u0142owacki",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "edmund_zientara",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "wojciech_jaruzelski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "antoni_lange",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "kazimierz_marcinkiewicz",
+            "ispoliticianof",
+            "warsaw"
+        ],
+        [
+            "antoni_malczewski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "wizz_air",
+            "islocatedin",
+            "warsaw"
+        ],
+        [
+            "j\u00f3zef_cyrankiewicz",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "jadwiga_pi\u0142sudska",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "marian_spychalski",
+            "diedin",
+            "warsaw"
+        ],
+        [
+            "daniel_bogusz",
+            "wasbornin",
+            "warsaw"
+        ],
+        [
+            "kpmg",
+            "islocatedin",
+            "warsaw"
+        ]
+    ]
+}
