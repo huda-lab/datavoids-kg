@@ -14,11 +14,12 @@ MAX_MIN_NORMALIZATION_COSTS = {
 }
 
 # supported kg datasets
-SUPPOTED_KG_DATASETS = {
+SUPPORTED_KG_DATASETS = {
     'FB15k-237': {
-        'base_path': 'Kelpie_package/Kelpie/data/YAGO3-10'
+        'base_path': "Kelpie_package/Kelpie/data/FB15k-237"
     },
     'yago310': {
-        'base_path': "Kelpie_package/Kelpie/data/FB15k-237"
+        
+        'base_path': "Kelpie_package/Kelpie/data/YAGO3-10"
     }
 }
