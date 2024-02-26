@@ -1,1 +1,0 @@
-{"model_path": "./results/remove_overlapping_budget/Kotono Mitsuishi_Sailor Moon R: The Movie_Evangelion: 1.0 You Are (Not) Alone_random_random/_2.pt", "good_fact_added": null, "bad_fact_added": null, "disinformer_spent_cost": 0, "mitigator_spent_cost": 0, "good_entity_rank": 1, "bad_entity_rank": 3, "head_preds": null, "tail_preds": null}

@@ -1,1 +1,0 @@
-{"good_entity_rankings": [33.0, 38.4, 21.2, 43.0, 47.0, 64.0, 54.2], "bad_entity_rankings": [40.0, 9.2, 32.8, 19.0, 89.2, 57.2, 73.6], "AUC_mitigator": 257.2, "AUC_disinformer": 264.20000000000005}

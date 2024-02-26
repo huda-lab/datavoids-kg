@@ -18,7 +18,7 @@ This repo requires access toi a GPU-enabled compute instance.
 
 ## Supported flows:  
 
-[] Flow 1: KG data preparation and high-level analysis  
+## Flow 1: KG high-level analysis  
 - give initial stats on the kg in question
     - # of triples, # of enities, highest degree node, lowest degree node. 
     - how connected is the kg??
