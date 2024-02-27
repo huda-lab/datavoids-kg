@@ -2,7 +2,7 @@
 
 
 
-# Installation and Running Instructions
+## Installation and Running Instructions
 
 1. Ensure access to a GPU-enabled compute instance with Python and Conda installed. For more information on Conda, visit [https://conda.io/projects/conda/en/latest/index.html](https://conda.io/projects/conda/en/latest/index.html).
 
