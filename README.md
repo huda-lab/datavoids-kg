@@ -17,16 +17,6 @@
     ```
     conda activate datavoids_env
     ```
-
-
-## Code Organization Explanation:
-TODO: explain the contents of each python file. 
-
-```helpers/```
-
-```Kelpie_package/```
-
-
 ## Supported Flows
 
 ### Flow 1: KG High-Level Analysis
@@ -56,3 +46,9 @@ where `KG_NAME` should be replaced with one of our supported knowledge graph dat
 
 [] Visualization
 
+## Code Organization Explanation:
+TODO: explain the contents of each python file. 
+
+```helpers/```
+
+```Kelpie_package/```
