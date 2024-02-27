@@ -4,19 +4,23 @@
 
 # Installation and Running Instructions
 
-This repo requires access toi a GPU-enabled compute instance. 
+This repo requires access to a GPU-enabled compute instance. 
+
+To setup 
 
 
 
 
 ## Code Organization Explanation:
+TODO: explain the contents of each python file. 
 
 ```helpers/```
 
 ```Kelpie_package/```
 
 
-## Supported flows:  
+## Supported flows
+The following flows are intended to be run in sequential fashion, each building on top of each other.   
 
 ## Flow 1: KG high-level analysis  
 - give initial stats on the kg in question
