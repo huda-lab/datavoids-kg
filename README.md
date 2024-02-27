@@ -20,6 +20,7 @@
 
 
 ## Code Organization Explanation:
+TODO: explain the contents of each python file. 
 
 ```helpers/```
 
