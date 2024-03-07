@@ -5,6 +5,7 @@ from Kelpie.dataset import Dataset
 import numpy as np
 import networkx as nx
 import time
+from helpers.constants import SUPPORTED_KG_DATASETS
 
 
 def calculate_auc(rankings):
@@ -138,6 +139,19 @@ def print_entity_id(entity_id, dataset, label_map):
         print(label_map[entity]['label'])
     else:
         print(entity)
+
+
+
+def get_data_from_kg_name(kg_name: str):
+    if kg_name not in SUPPORTED_KG_DATASETS:
+        raise Exception(
+            f"{kg_name} is not supported! Valid options are {', '.join(SUPPORTED_KG_DATASETS.keys())}")
+    
+    base_path = SUPPORTED_KG_DATASETS[kg_name]['base_path']
+    TRAIN_PATH = f'{base_path}/train.txt'
+    TEST_PATH = f'{base_path}/test.txt'
+    VALID_PATH = f'{base_path}/valid.txt'
+    return Dataset(name=kg_name, load=True, train_path=TRAIN_PATH, test_path=TEST_PATH, valid_path=VALID_PATH), TRAIN_PATH, TEST_PATH, VALID_PATH
 
 
 def extract_subgraph_of_kg(dataset: Dataset, central_facts_to_investigate: list, percentage_to_keep: int = None, num_entries_to_keep: int = None, save_path: str = None):
