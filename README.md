@@ -32,6 +32,24 @@ python 1_flow.py --kg_name KG_NAME
 
 where `KG_NAME` should be replaced with one of our supported knowledge graph datasets: `FB15237` or `yago310`.
 
+### Flow 2: Datavoid curation based on chosen relations
+- Generate a list of candidate datavoid relations based on user input of relations from the KG.
+
+
+FB15k-237 relations:
+```
+/film/actor/film./film/performance/film
+/film/director/film
+/tv/tv_producer/programs_produced./tv/tv_producer_term/program
+
+```
+
+YAGO3-10 relations:
+```
+
+```
+
+
 
 ### Missing Flows
 
