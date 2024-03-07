@@ -19,7 +19,7 @@ SUPPORTED_KG_DATASETS = {
         'base_path': "Kelpie_package/Kelpie/data/FB15k-237"
     },
     'yago310': {
-        
+
         'base_path': "Kelpie_package/Kelpie/data/YAGO3-10"
     }
 }

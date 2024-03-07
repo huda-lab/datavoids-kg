@@ -1,12 +1,14 @@
 import json
-from collections import defaultdict
 import traceback
+from collections import defaultdict
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
-from helpers.helpers import calculate_auc
+
 from helpers.constants import STATS_COLS
+from helpers.helpers import calculate_auc
 
 # plt.rcParams["font.family"] = "Helvetica"
 plt.rcParams["font.size"] = 25
@@ -45,7 +47,8 @@ def get_shortened_name(good_fact: str, bad_fact: str, label_map: dict):
 
 
 def plot_facts_added_difference(facts_added_1, facts_added_2):
-    to_plot = [facts_added_1[i] == facts_added_2[i] for i in range(len(facts_added_1))]
+    to_plot = [facts_added_1[i] == facts_added_2[i]
+               for i in range(len(facts_added_1))]
     plt.plot(to_plot, color="black")
     plt.title("Difference between facts added")
 
@@ -60,7 +63,8 @@ def get_stats_tables(
 ):
     tables = []
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         try:
             res_folder = (
                 f"{base_res_folder}/{base_experiment_name}_{strategy_extension}"
@@ -124,7 +128,8 @@ def combine_all_stats_tables(stats_tables: list, experiment_pairs: list):
             ],
             columns=STATS_COLS,
         )
-        res = pd.concat([res, good_fact_df, bad_fact_df], ignore_index=True, axis=0)
+        res = pd.concat([res, good_fact_df, bad_fact_df],
+                        ignore_index=True, axis=0)
 
     return res
 
@@ -137,7 +142,8 @@ def get_simplified_exp_results(
 ):
     exp_records = defaultdict(dict)
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         for strategy_one in strategies:
             for strategy_two in strategies:
                 try:
@@ -172,7 +178,8 @@ def get_simplified_exp_results(
                     data["AUC_disinformer"],
                 ]
         except:
-            print("Cannot retrieve random-random 1 results for ", base_experiment_name)
+            print("Cannot retrieve random-random 1 results for ",
+                  base_experiment_name)
             continue
 
         try:
@@ -188,10 +195,12 @@ def get_simplified_exp_results(
                     data["AUC_disinformer"],
                 ]
         except:
-            print("Cannot retrieve random-random 2 results for ", base_experiment_name)
+            print("Cannot retrieve random-random 2 results for ",
+                  base_experiment_name)
             continue
 
     return exp_records
+
 
 def get_experiment_type(strategy_one, strategy_two, attempt_flip=False):
     """
@@ -219,7 +228,8 @@ def get_cost_spent_records(
     cost_spent = defaultdict(dict)
 
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         budget_file_name = f"{budget_folder}/{base_experiment_name}_budget.json"
         with open(budget_file_name, "r") as f:
             budget = json.load(f)
@@ -334,7 +344,8 @@ def get_cost_spent_records(
                             axis=0,
                         )
                 except:
-                    print("Cannot retrieve cost for", base_experiment_name, exp_type)
+                    print("Cannot retrieve cost for",
+                          base_experiment_name, exp_type)
                     traceback.print_exc()
                     continue
     return cost_spent
@@ -363,7 +374,8 @@ def plot_costs_matrix(
         k = 0
         for strategy in strategies:
             try:
-                shortened_name = get_shortened_name(good_fact, bad_fact, label_map)
+                shortened_name = get_shortened_name(
+                    good_fact, bad_fact, label_map)
                 ax[j].set_yscale("log")
                 ax[j].plot(
                     cost_spent[base_exp_name][f"{strategy}_random"]["mitigator_cost"],
@@ -398,20 +410,26 @@ def simplify_full_exp_results(full_exp_results: dict, n_epochs: int):
                     bad_rankings.append([])
                     for r in range(attack_budget):
                         good_rankings[e].append(
-                            1 / current_exps[exp_type][e][str(r)]["good_entity_rank"]
+                            1 /
+                            current_exps[exp_type][e][str(
+                                r)]["good_entity_rank"]
                         )
                         bad_rankings[e].append(
-                            1 / current_exps[exp_type][e][str(r)]["bad_entity_rank"]
+                            1 /
+                            current_exps[exp_type][e][str(
+                                r)]["bad_entity_rank"]
                         )
                 simplified_exp_results[base_exp_name][exp_type] = [
                     np.average(good_rankings, axis=0),
                     np.average(bad_rankings, axis=0),
                 ]
             except:
-                print("failed to simplify full results at", base_exp_name, exp_type)
+                print("failed to simplify full results at",
+                      base_exp_name, exp_type)
                 print()
                 continue
     return simplified_exp_results
+
 
 def impute_missing_first_round(exp_results: list):
     for i in range(len(exp_results)):
@@ -430,7 +448,8 @@ def get_full_exp_results(
 ):
     exp_records = defaultdict(dict)
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         for strategy_one in strategies:
             for strategy_two in strategies:
                 try:
@@ -484,7 +503,8 @@ def get_avg_disinformer_mitigator_difference_1_exp(exp_results, num_rounds):
             # +ve if bad entity rank > good entity rank -> good entity is doing better
             # -ve if bad < good -> bad entity is doing better
             epoch_diffs.append(
-                (1 / round_["good_entity_rank"]) - (1 / round_["bad_entity_rank"])
+                (1 / round_["good_entity_rank"]) -
+                (1 / round_["bad_entity_rank"])
             )
         all_diffs.append(epoch_diffs)
 
@@ -502,7 +522,8 @@ def get_disinformer_mitigator_avg_difference(
     all_diffs = defaultdict(dict)
     j = 0
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         # add one for round 0
         num_rounds = stat_tables[j].at[0, "good_fact_num_budget"] + 1
         j += 1
@@ -627,7 +648,8 @@ def plot_matrix_rankings(
         try:
             current_row = 0
             good_fact, bad_fact = experiment_pairs[j]
-            ax[0][j * 2].set_title(get_shortened_name(good_fact, bad_fact, label_map))
+            ax[0][j *
+                  2].set_title(get_shortened_name(good_fact, bad_fact, label_map))
             # pylint: disable=arguments-out-of-order
             ax[0][j * 2 + 1].set_title(
                 get_shortened_name(bad_fact, good_fact, label_map)
@@ -636,7 +658,8 @@ def plot_matrix_rankings(
                 run_plot_stats_table(ax[current_row][j * 2], stats_tables[j])
                 ax[current_row][j * 2 + 1].axis("off")
                 current_row += 1
-            base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+            base_experiment_name = get_base_exp_name(
+                good_fact, bad_fact, label_map)
             # plotting random-random mitigator
             if plot_random_random:
                 ax[current_row][j * 2].plot(
@@ -651,7 +674,8 @@ def plot_matrix_rankings(
                 )
                 ax[current_row][j * 2].legend(loc="lower right")
         except:
-            print("Failed to plot", base_experiment_name, "random-random plotting")
+            print("Failed to plot", base_experiment_name,
+                  "random-random plotting")
             continue
 
     # for every disinformer strategy
@@ -692,7 +716,8 @@ def plot_matrix_rankings(
                         cost_random = cost_spent[base_experiment_name][
                             f"random_{disinformer_strategy}"
                         ]["mitigator_cost"]
-                        plot_cost(row[j], cost_exp, cost_random, mitigator_strategy)
+                        plot_cost(row[j], cost_exp, cost_random,
+                                  mitigator_strategy)
 
                     # topic flipped
                     exp_rankings = simplified_exp_results[base_experiment_name][
@@ -712,7 +737,8 @@ def plot_matrix_rankings(
                         cost_random = cost_spent[base_experiment_name][
                             f"{disinformer_strategy}_random"
                         ]["disinformer_cost"]
-                        plot_cost(row[j + 1], cost_exp, cost_random, mitigator_strategy)
+                        plot_cost(row[j + 1], cost_exp,
+                                  cost_random, mitigator_strategy)
 
                 except:
                     print("Failed to plot matrix rankings")
@@ -777,12 +803,14 @@ def plot_matrix_diffs(
                     get_shortened_name(bad_fact, good_fact, label_map)
                 )
             if plot_stats_tables:
-                run_plot_stats_table(ax[current_row][current_col], stats_tables[j])
+                run_plot_stats_table(
+                    ax[current_row][current_col], stats_tables[j])
                 if plot_topics_flipped:
                     ax[current_row][current_col + 1].axis("off")
                 current_row += 1
             if plot_random_random:
-                base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+                base_experiment_name = get_base_exp_name(
+                    good_fact, bad_fact, label_map)
                 plot_random_random_diffs(
                     ax[current_row][current_col], base_experiment_name, exp_diffs
                 )
@@ -827,7 +855,8 @@ def plot_matrix_diffs(
                         row[current_col],
                     )
                     if with_auc:
-                        plot_auc_diff(row[current_col], exp_rankings, random_rankings)
+                        plot_auc_diff(row[current_col],
+                                      exp_rankings, random_rankings)
                     if with_cost and cost_spent is not None:
                         cost_exp = cost_spent[base_experiment_name][
                             f"{mitigator_strategy}_{disinformer_strategy}"
@@ -943,7 +972,8 @@ def get_ranking_aucs(
     res = []
     strategies_no_baseline = list(set(strategies) - set(baseline))
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         for i, _ in enumerate(strategies):
             disinformer_strategy = strategies[i]
             for m, _ in enumerate(strategies_no_baseline):
@@ -1007,7 +1037,8 @@ def get_diff_aucs(
     res = []
     strategies_no_baseline = list(set(strategies) - set(baseline))
     for good_fact, bad_fact in experiment_pairs:
-        base_experiment_name = get_base_exp_name(good_fact, bad_fact, label_map)
+        base_experiment_name = get_base_exp_name(
+            good_fact, bad_fact, label_map)
         for i, _ in enumerate(strategies):
             disinformer_strategy = strategies[i]
             for m, _ in enumerate(strategies_no_baseline):

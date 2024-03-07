@@ -1,10 +1,10 @@
 import argparse
 
-from helpers.helpers import ( find_head_tail_rel,
-                             initialize_nx_graph, get_data_from_kg_name)
+from helpers.helpers import (find_head_tail_rel, get_data_from_kg_name,
+                             initialize_nx_graph)
 
 
-def main(kg_name):    
+def main(kg_name):
     dataset_interface = get_data_from_kg_name(kg_name)[0]
     dataset_nx_graph = initialize_nx_graph(dataset_interface)
 

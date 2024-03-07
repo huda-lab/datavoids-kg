@@ -1,16 +1,18 @@
-from abc import ABC, abstractmethod
-import random
 import copy
-from Kelpie.dataset import Dataset
-from helpers.kelpie_models_helpers import train_complex
-import numpy as np
-import math
-import networkx as nx
 import heapq
-from collections import defaultdict
-from helpers.constants import SEED
+import math
+import random
 import time
+from abc import ABC, abstractmethod
+from collections import defaultdict
+
+import networkx as nx
+import numpy as np
+from Kelpie.dataset import Dataset
+
+from helpers.constants import SEED
 from helpers.helpers import initialize_nx_graph
+from helpers.kelpie_models_helpers import train_complex
 
 
 class Strategy(ABC):
@@ -89,7 +91,8 @@ class RandomStrategy(Strategy):
         # randomly choose a sample from the candidates and pop it from the attack budget
         print("Budget candidates:", self.valid_attack_budget)
         print("valid attack budget length:", len(self.valid_attack_budget))
-        chosen_index = self.random_generator.randrange(len(self.valid_attack_budget))
+        chosen_index = self.random_generator.randrange(
+            len(self.valid_attack_budget))
         print("Chosen index:", chosen_index)
         # make sure valid attack budget is sorted to make results deterministic given a random seed
         sample_to_add = sorted(list(self.valid_attack_budget))[chosen_index]
@@ -186,21 +189,21 @@ class MultiObjectiveGreedyStrategy(Strategy):
         self.min_normalization_cost = min_normalization_cost
         self.normalized_costs = self.normalize_costs(budget_costs)
         # copy budget relevance
-        self.budget_relevance = {k:v for (k, v) in budget_relevance.items()}
+        self.budget_relevance = {k: v for (k, v) in budget_relevance.items()}
         self.alpha = alpha
         super().__init__(budget, budget_costs, max_cost)
         self.order_to_add = self._calculate_order_to_add()
 
     def _calculate_order_to_add(self):
         return sorted(
-            list(self.valid_attack_budget), reverse=True, key=lambda fact: (self.alpha * self.budget_relevance[tuple(fact)]) - (self.alpha * self.normalized_costs[tuple(fact)]) 
+            list(self.valid_attack_budget), reverse=True, key=lambda fact: (self.alpha * self.budget_relevance[tuple(fact)]) - (self.alpha * self.normalized_costs[tuple(fact)])
         )
 
     def add_to_budget(self, samples: set, budget_costs: dict, budget_relevance: dict):
         # normalize costs
         self.normalized_costs = self.normalize_costs(budget_costs)
         # copy budget relevance
-        self.budget_relevance = {k:v for (k, v) in budget_relevance.items()}
+        self.budget_relevance = {k: v for (k, v) in budget_relevance.items()}
         super().add_to_budget(samples, budget_costs)
         self.order_to_add = self._calculate_order_to_add()
 
@@ -228,9 +231,9 @@ class MultiObjectiveGreedyStrategy(Strategy):
 
 
 class ApproxGreedyStrategy(Strategy):
-    def __init__(self, budget: set, budget_costs: dict, budget_relevance:dict, max_cost: int = math.inf):
+    def __init__(self, budget: set, budget_costs: dict, budget_relevance: dict, max_cost: int = math.inf):
         super().__init__(budget, budget_costs, max_cost)
-        self.budget_relevance = {k:v for (k, v) in budget_relevance.items()}
+        self.budget_relevance = {k: v for (k, v) in budget_relevance.items()}
         self.order_to_add = self._calculate_order_to_add()
 
     def _calculate_order_to_add(self):
@@ -240,7 +243,7 @@ class ApproxGreedyStrategy(Strategy):
 
     def add_to_budget(self, samples: set, budget_costs: dict, budget_relevance: dict):
         # copy budget relevance
-        self.budget_relevance = {k:v for (k, v) in budget_relevance.items()}
+        self.budget_relevance = {k: v for (k, v) in budget_relevance.items()}
         super().add_to_budget(samples, budget_costs)
         self.order_to_add = self._calculate_order_to_add()
 
@@ -308,7 +311,8 @@ class NeighborStrategy(Strategy):
             except:
                 path_length = math.inf
             heapq.heappush(self.distances, (path_length, sample))
-            self.graph.add_edge(sample[0], sample[2], key=sample[1], label=sample[1])
+            self.graph.add_edge(sample[0], sample[2],
+                                key=sample[1], label=sample[1])
 
     def next_sample(self) -> tuple:
         if not self.attack_budget or not len(self.valid_attack_budget):
@@ -390,7 +394,8 @@ class AltNeighborStrategy(Strategy):
 
         for sample in samples:
             if sample in temp_distances:
-                heapq.heappush(self.distances, (temp_distances[sample], sample))
+                heapq.heappush(
+                    self.distances, (temp_distances[sample], sample))
             else:
                 heapq.heappush(self.distances, (math.inf, sample))
 

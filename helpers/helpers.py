@@ -1,10 +1,12 @@
-import math
 import itertools
 import json
-from Kelpie.dataset import Dataset
-import numpy as np
-import networkx as nx
+import math
 import time
+
+import networkx as nx
+import numpy as np
+from Kelpie.dataset import Dataset
+
 from helpers.constants import SUPPORTED_KG_DATASETS
 
 
@@ -128,10 +130,12 @@ def print_samples_to_readable_facts(samples, dataset: Dataset, label_map: dict):
     for sample in samples:
         print_sample(sample, dataset, label_map)
 
-def get_readable_fact_str(fact:list, label_map:dict):
+
+def get_readable_fact_str(fact: list, label_map: dict):
     if not label_map:
         return ''.join(fact)
     return ' '.join([label_map[fact[0]]['label'], fact[1], label_map[fact[2]]['label']])
+
 
 def print_entity_id(entity_id, dataset, label_map):
     entity = dataset.get_name_for_entity_id(entity_id)
@@ -141,12 +145,11 @@ def print_entity_id(entity_id, dataset, label_map):
         print(entity)
 
 
-
 def get_data_from_kg_name(kg_name: str):
     if kg_name not in SUPPORTED_KG_DATASETS:
         raise Exception(
             f"{kg_name} is not supported! Valid options are {', '.join(SUPPORTED_KG_DATASETS.keys())}")
-    
+
     base_path = SUPPORTED_KG_DATASETS[kg_name]['base_path']
     TRAIN_PATH = f'{base_path}/train.txt'
     TEST_PATH = f'{base_path}/test.txt'

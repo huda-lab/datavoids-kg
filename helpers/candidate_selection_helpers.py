@@ -1,20 +1,18 @@
-from itertools import combinations
-from math import comb
+from typing import List, Optional
 import json
 import os
 from collections import Counter
-from Kelpie.dataset import Dataset
+from itertools import combinations
+from math import comb
+
 import numpy as np
-from helpers.kelpie_models_helpers import train_complex
+from Kelpie.dataset import Dataset
+
 from helpers.budget_helpers import get_good_bad_fact_budgets
-from helpers.helpers import (
-    find_head_tail_rel,
-    NpEncoder,
-    extract_subgraph_of_kg,
-    print_entity_id,
-    initialize_nx_graph,
-    print_samples_to_readable_facts,
-)
+from helpers.helpers import (NpEncoder, extract_subgraph_of_kg,
+                             find_head_tail_rel, initialize_nx_graph,
+                             print_entity_id, print_samples_to_readable_facts)
+from helpers.kelpie_models_helpers import train_complex
 
 
 def preview_samples_from_rel(rel: str, dataset: Dataset, label_map: dict):
@@ -141,15 +139,14 @@ def find_suitable_candidates(
     print()
 
     estimate_duration_time(
-        time_estimate_per_candidate = 6,
-        num_heads_to_test = num_heads_to_test,
-        num_tails_per_head = num_tails_per_head,
-        chosen_head_ids = chosen_head_ids,
+        time_estimate_per_candidate=6,
+        num_heads_to_test=num_heads_to_test,
+        num_tails_per_head=num_tails_per_head,
+        chosen_head_ids=chosen_head_ids,
         dataset=dataset,
-        rel_id= rel_id, 
-        graph = graph
+        rel_id=rel_id,
+        graph=graph
     )
-
 
     if not save_folder:
         save_folder = "./results/"
@@ -163,8 +160,6 @@ def find_suitable_candidates(
     # Create save directory for relation name
     relation_save_directory = os.path.join(dataset_save_directory, rel)
     os.makedirs(relation_save_directory, exist_ok=True)
-
-
 
     for x in range(num_heads_to_test):
         print("Testing head:")
@@ -181,7 +176,8 @@ def find_suitable_candidates(
         n = len(chosen_tail_ids)
 
         current_candidates_number = comb(n, 2)
-        print("Candidates to test for the above head:", current_candidates_number) 
+        print("Candidates to test for the above head:",
+              current_candidates_number)
         for combo in combinations(range(n), 2):
             i, j = combo
             good_tail_id = chosen_tail_ids[i][0]
@@ -198,14 +194,16 @@ def find_suitable_candidates(
             print(bad_fact)
             print()
 
-            reduced_dataset_path = os.path.join(relation_save_directory, f'{good_fact}_{bad_fact}.txt') 
-            budget_dump_file = os.path.join(relation_save_directory,f'{good_fact}_{bad_fact}_budget.json')
-            trained_model_save_path = os.path.join(relation_save_directory,f'{good_fact}_{bad_fact}_model.pt')
+            reduced_dataset_path = os.path.join(
+                relation_save_directory, f'{good_fact}_{bad_fact}.txt')
+            budget_dump_file = os.path.join(
+                relation_save_directory, f'{good_fact}_{bad_fact}_budget.json')
+            trained_model_save_path = os.path.join(
+                relation_save_directory, f'{good_fact}_{bad_fact}_model.pt')
 
             if not os.path.exists(reduced_dataset_path):
                 extract_subgraph_of_kg(
                     dataset, [good_fact, bad_fact], percentage_to_keep=5, save_path=reduced_dataset_path)
-            
 
             print("obtained reduced dataset")
 
@@ -219,12 +217,12 @@ def find_suitable_candidates(
             )
 
             budget_res = get_good_bad_fact_budgets(
-                dataset = reduced_dataset,
-                good_fact = good_fact, 
-                bad_fact  = bad_fact, 
-                num_budget = num_attack_budget, 
-                trained_model_saving_path = trained_model_save_path,
-                budget_dump_file=budget_dump_file , 
+                dataset=reduced_dataset,
+                good_fact=good_fact,
+                bad_fact=bad_fact,
+                num_budget=num_attack_budget,
+                trained_model_saving_path=trained_model_save_path,
+                budget_dump_file=budget_dump_file,
                 budget_strategy='kelpie'
             )
 
@@ -246,19 +244,18 @@ def find_suitable_candidates(
 
             # print("Budget constraints satisfied")
 
-
-
             # print("Retrieved ranks")
 
             # if abs(ranks[0] - ranks[1]) < diff_rankings:
             #     print("Rank condition satisfied")
 
             facts_ranks_num_entities.append(
-                [good_fact, bad_fact, ranks, len(budget_res["overlapping_budget"])]
+                [good_fact, bad_fact, ranks, len(
+                    budget_res["overlapping_budget"])]
             )
             with open(save_file, "w", encoding="utf-8") as f:
                 json.dump(facts_ranks_num_entities, f, cls=NpEncoder)
-    
+
     print()
     print()
     print()
@@ -267,22 +264,19 @@ def find_suitable_candidates(
     return facts_ranks_num_entities
 
 
-from math import comb
-from typing import List, Optional
-
 def estimate_duration_time(
     time_estimate_per_candidate: int = 6,
     num_heads_to_test: int = 6,
     num_tails_per_head: int = 6,
-    tail_degrees = None,
-    chosen_head_ids = None,
+    tail_degrees=None,
+    chosen_head_ids=None,
     dataset: Dataset = None,
-    rel_id = None,
-    graph= None  # Replace 'GraphType' with the actual type of your graph
+    rel_id=None,
+    graph=None  # Replace 'GraphType' with the actual type of your graph
 ):
     """
     Print the total duration time for testing a given number of heads and tails.
-    
+
     :param time_estimate_per_candidate: Estimated time per candidate, in hours.
     :param num_heads_to_test: Number of heads to test.
     :param num_tails_per_head: Number of tails per head.
@@ -298,7 +292,8 @@ def estimate_duration_time(
 
     candidates_total = 0
     for x in range(num_heads_to_test):
-        relevant_samples = find_head_tail_rel(dataset, head_id=chosen_head_ids[x][0], rel_id=rel_id)
+        relevant_samples = find_head_tail_rel(
+            dataset, head_id=chosen_head_ids[x][0], rel_id=rel_id)
         tail_ids = list({s[2] for s in relevant_samples})
 
         tail_degrees = list(graph.degree(tail_ids))
@@ -311,8 +306,8 @@ def estimate_duration_time(
         candidates_total += current_candidates_number
 
     total_duration = candidates_total * time_estimate_per_candidate
-    print(f"Estimated duration time for {candidates_total} candidates: {total_duration} hours")
+    print(
+        f"Estimated duration time for {candidates_total} candidates: {total_duration} hours")
 
 # Usage example (make sure all required parameters are provided)
 # estimate_duration_time(chosen_head_ids=[...], dataset=my_dataset, graph=my_graph)
-

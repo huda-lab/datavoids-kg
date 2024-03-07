@@ -1,34 +1,26 @@
-import os
-import json
 import copy
-import numpy as np
+import json
+import os
+
 import matplotlib.pyplot as plt
+import numpy as np
 from Kelpie.dataset import Dataset
+
 from helpers.agent import Agent
-from helpers.helpers import (
-    extract_subgraph_of_kg,
-    print_samples_to_readable_facts,
-    print_fact,
-    initialize_nx_graph,
-    calculate_auc,
-)
-from helpers.strategies import (
-    ApproxGreedyStrategy,
-    RandomStrategy,
-    GreedyStrategy,
-    NeighborStrategy,
-    AltNeighborStrategy,
-    MultiObjectiveGreedyStrategy,
-)
+from helpers.budget_helpers import (get_good_bad_fact_budgets,
+                                    load_budget_from_file,
+                                    parse_budget_from_dictionary)
+from helpers.constants import MAX_MIN_NORMALIZATION_COSTS, SEED
+from helpers.helpers import (calculate_auc, extract_subgraph_of_kg,
+                             initialize_nx_graph, print_fact,
+                             print_samples_to_readable_facts)
 from helpers.kelpie_models_helpers import train_complex
-from helpers.constants import SEED, MAX_MIN_NORMALIZATION_COSTS
-from helpers.budget_helpers import (
-    load_budget_from_file,
-    get_good_bad_fact_budgets,
-    parse_budget_from_dictionary,
-)
+from helpers.strategies import (AltNeighborStrategy, ApproxGreedyStrategy,
+                                GreedyStrategy, MultiObjectiveGreedyStrategy,
+                                NeighborStrategy, RandomStrategy)
 
 # fix label_map_path stuff
+
 
 class KnowledgeGraphMitigationExperiment:
     def __init__(
@@ -124,7 +116,7 @@ class KnowledgeGraphMitigationExperiment:
         if label_map_path:
             with open(label_map_path, "r", encoding="utf-8") as f:
                 self.label_map = json.load(f)
-        else: 
+        else:
             self.label_map = None
 
         # the actual dataset used during the experiment
@@ -230,7 +222,8 @@ class KnowledgeGraphMitigationExperiment:
         if self.reduce_original:
             # make a directory for the data
             os.makedirs(self.save_directory + "/data", exist_ok=True)
-            print("Reducing file size of train file in the dataset", self.dataset_name)
+            print("Reducing file size of train file in the dataset",
+                  self.dataset_name)
             train_dataset = Dataset(
                 name=self.dataset_name,
                 separator="\t",
@@ -277,23 +270,29 @@ class KnowledgeGraphMitigationExperiment:
         if self.disinformer.strategy_name == "neighbor":
             self.disinformer.strategy.set_dataset(
                 self.dataset,
-                self.dataset.get_id_for_entity_name(self.bad_fact_in_question[0]),
-                self.dataset.get_id_for_entity_name(self.bad_fact_in_question[2]),
+                self.dataset.get_id_for_entity_name(
+                    self.bad_fact_in_question[0]),
+                self.dataset.get_id_for_entity_name(
+                    self.bad_fact_in_question[2]),
             )
         elif self.disinformer.strategy_name == "alt_neighbor":
             self.disinformer.strategy.set_dataset(
-                self.dataset, self.dataset.fact_to_sample(self.bad_fact_in_question)
+                self.dataset, self.dataset.fact_to_sample(
+                    self.bad_fact_in_question)
             )
 
         if self.mitigator.strategy_name == "neighbor":
             self.mitigator.strategy.set_dataset(
                 self.dataset,
-                self.dataset.get_id_for_entity_name(self.good_fact_in_question[0]),
-                self.dataset.get_id_for_entity_name(self.good_fact_in_question[2]),
+                self.dataset.get_id_for_entity_name(
+                    self.good_fact_in_question[0]),
+                self.dataset.get_id_for_entity_name(
+                    self.good_fact_in_question[2]),
             )
         elif self.mitigator.strategy_name == "alt_neighbor":
             self.mitigator.strategy.set_dataset(
-                self.dataset, self.dataset.fact_to_sample(self.good_fact_in_question)
+                self.dataset, self.dataset.fact_to_sample(
+                    self.good_fact_in_question)
             )
 
         # initialize graph
@@ -414,7 +413,8 @@ class KnowledgeGraphMitigationExperiment:
         good_sample_in_question = copy_dataset.fact_to_sample(
             self.good_fact_in_question
         )
-        bad_sample_in_question = copy_dataset.fact_to_sample(self.bad_fact_in_question)
+        bad_sample_in_question = copy_dataset.fact_to_sample(
+            self.bad_fact_in_question)
 
         copy_dataset.remove_training_samples(
             np.array([good_sample_in_question, bad_sample_in_question])
@@ -445,7 +445,8 @@ class KnowledgeGraphMitigationExperiment:
         # convert good entity and bad entity to ids
         good_entity_id = dataset.get_id_for_entity_name(self.good_entity)
         bad_entity_id = dataset.get_id_for_entity_name(self.bad_entity)
-        good_sample_in_question = dataset.fact_to_sample(self.good_fact_in_question)
+        good_sample_in_question = dataset.fact_to_sample(
+            self.good_fact_in_question)
 
         _, _, predictions = trained_model.predict_samples(
             np.array([good_sample_in_question])
@@ -457,20 +458,24 @@ class KnowledgeGraphMitigationExperiment:
             good_entity_rank = (
                 int(np.where(tail_predictions == good_entity_id)[0][0]) + 1
             )
-            bad_entity_rank = int(np.where(tail_predictions == bad_entity_id)[0][0]) + 1
+            bad_entity_rank = int(
+                np.where(tail_predictions == bad_entity_id)[0][0]) + 1
         else:
             good_entity_rank = (
                 int(np.where(head_predictions == good_entity_id)[0][0]) + 1
             )
-            bad_entity_rank = int(np.where(head_predictions == bad_entity_id)[0][0]) + 1
+            bad_entity_rank = int(
+                np.where(head_predictions == bad_entity_id)[0][0]) + 1
 
         print("Good entity rank", good_entity_rank)
         print("Bad entity rank", bad_entity_rank)
         return (
             good_entity_rank,
             bad_entity_rank,
-            [dataset.get_name_for_entity_id(pred) for pred in head_predictions[:5]],
-            [dataset.get_name_for_entity_id(pred) for pred in tail_predictions[:5]],
+            [dataset.get_name_for_entity_id(pred)
+             for pred in head_predictions[:5]],
+            [dataset.get_name_for_entity_id(pred)
+             for pred in tail_predictions[:5]],
         )
 
     def _collect_results(
@@ -511,8 +516,10 @@ class KnowledgeGraphMitigationExperiment:
     ):
         new_dataset = copy.deepcopy(self.dataset)
         # remove good and bad samples
-        good_sample_in_question = new_dataset.fact_to_sample(self.good_fact_in_question)
-        bad_sample_in_question = new_dataset.fact_to_sample(self.bad_fact_in_question)
+        good_sample_in_question = new_dataset.fact_to_sample(
+            self.good_fact_in_question)
+        bad_sample_in_question = new_dataset.fact_to_sample(
+            self.bad_fact_in_question)
         print("Removing:")
         print_samples_to_readable_facts(
             [good_sample_in_question, bad_sample_in_question],
@@ -525,7 +532,8 @@ class KnowledgeGraphMitigationExperiment:
         )
 
         # remove good and bad budget
-        new_dataset.remove_training_samples(np.array(list(good_budget_samples)))
+        new_dataset.remove_training_samples(
+            np.array(list(good_budget_samples)))
         new_dataset.remove_training_samples(np.array(list(bad_budget_samples)))
         print("Removing explanations:")
         print_samples_to_readable_facts(
@@ -537,7 +545,8 @@ class KnowledgeGraphMitigationExperiment:
 
         # remove overlapping budget
         if self.remove_overlapping_budget_from_dv:
-            new_dataset.remove_training_samples(np.array(list(overlapping_budget)))
+            new_dataset.remove_training_samples(
+                np.array(list(overlapping_budget)))
             print("Removing overlapping budget")
 
         return new_dataset
@@ -623,7 +632,8 @@ class KnowledgeGraphMitigationExperiment:
                 self.budget_strategy,
                 self.cost_type,
             )
-        parsed_budget_data = parse_budget_from_dictionary(budget_data, copy_dataset)
+        parsed_budget_data = parse_budget_from_dictionary(
+            budget_data, copy_dataset)
         self.good_budget = parsed_budget_data["good_budget"]
         self.bad_budget = parsed_budget_data["bad_budget"]
         self.good_budget_costs = parsed_budget_data["good_budget_costs"]
@@ -638,7 +648,8 @@ class KnowledgeGraphMitigationExperiment:
         self.current_epoch += 1
         if self.save_dataset_each_round:
             self.experimental_dataset.save_training_set(
-                self.save_directory + f"/epoch_{self.current_epoch}_dataset.txt"
+                self.save_directory +
+                f"/epoch_{self.current_epoch}_dataset.txt"
             )
 
         all_good_entity_rankings = [good_entity_rankings]
@@ -683,7 +694,8 @@ class KnowledgeGraphMitigationExperiment:
             # save dataset at the end of every epoch
             if self.save_dataset_each_round:
                 self.experimental_dataset.save_training_set(
-                    self.save_directory + f"/epoch_{self.current_epoch}_dataset.txt"
+                    self.save_directory +
+                    f"/epoch_{self.current_epoch}_dataset.txt"
                 )
 
         print("All good entity rankings:", all_good_entity_rankings)
@@ -764,8 +776,10 @@ class KnowledgeGraphMitigationExperiment:
                 print("Dataset was not modified")
                 self._collect_results(
                     index + 1,
-                    self.results[self.current_epoch][str(index)]["good_entity_rank"],
-                    self.results[self.current_epoch][str(index)]["bad_entity_rank"],
+                    self.results[self.current_epoch][str(
+                        index)]["good_entity_rank"],
+                    self.results[self.current_epoch][str(
+                        index)]["bad_entity_rank"],
                     fact_added_mitigator,
                     fact_added_disinformer,
                     disinformer_spent_cost,
@@ -821,7 +835,8 @@ class KnowledgeGraphMitigationExperiment:
         # good entity rankings color is red
         fig, ax = plt.subplots(figsize=(4, 4))
 
-        ax.plot(good_entity_rankings, color="blue", label="good entity rankings")
+        ax.plot(good_entity_rankings, color="blue",
+                label="good entity rankings")
         # bad entity rankings color is blue
         ax.plot(bad_entity_rankings, color="red", label="bad entity rankings")
         plt.gca().invert_yaxis()

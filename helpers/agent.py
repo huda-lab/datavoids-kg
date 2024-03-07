@@ -1,7 +1,9 @@
-from Kelpie.dataset import Dataset
-from helpers.helpers import print_sample
 import numpy as np
+from Kelpie.dataset import Dataset
+
+from helpers.helpers import print_sample
 from helpers.strategies import Strategy
+
 # the following class is used to to keep track of the agents' attack budget and the samples they have added to the dataset
 # this class also allows the agents to modify the dataset interfacte through the modify_dataset function.
 # an agent could be a disinformer or a mitigator, but this is just arbitrary and done for the sake of the simulation.
@@ -13,12 +15,12 @@ class Agent:
         self.strategy_name = strategy_name
         self.strategy = strategy
 
-    def add_to_attack_budget(self, new_samples: set, sample_costs: dict, budget_relevance:dict=None):
+    def add_to_attack_budget(self, new_samples: set, sample_costs: dict, budget_relevance: dict = None):
         if self.strategy_name == 'multi_greedy' or self.strategy_name == 'approx_greedy':
-            self.strategy.add_to_budget(new_samples, sample_costs, budget_relevance)
+            self.strategy.add_to_budget(
+                new_samples, sample_costs, budget_relevance)
         else:
             self.strategy.add_to_budget(new_samples, sample_costs)
-
 
     def reset_strategy(self):
         self.strategy.reset_strategy()

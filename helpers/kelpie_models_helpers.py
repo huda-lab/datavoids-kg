@@ -1,16 +1,21 @@
+import time
+
 import numpy
 import torch
 from Kelpie.dataset import Dataset
-from helpers.constants import SEED
-from Kelpie.link_prediction.models.transe import TransE
-from Kelpie.link_prediction.models.complex import ComplEx
 from Kelpie.kelpie import Kelpie as Kelpie
-from Kelpie.link_prediction.optimization.multiclass_nll_optimizer import MultiClassNLLOptimizer
-from Kelpie.link_prediction.models.model import BATCH_SIZE, LEARNING_RATE, EPOCHS, DIMENSION, \
-    REGULARIZER_WEIGHT,  \
-    REGULARIZER_NAME, DECAY_1, DECAY_2, INIT_SCALE, OPTIMIZER_NAME
 from Kelpie.link_prediction.evaluation.evaluation import Evaluator
-import time
+from Kelpie.link_prediction.models.complex import ComplEx
+from Kelpie.link_prediction.models.model import (BATCH_SIZE, DECAY_1, DECAY_2,
+                                                 DIMENSION, EPOCHS, INIT_SCALE,
+                                                 LEARNING_RATE, OPTIMIZER_NAME,
+                                                 REGULARIZER_NAME,
+                                                 REGULARIZER_WEIGHT)
+from Kelpie.link_prediction.models.transe import TransE
+from Kelpie.link_prediction.optimization.multiclass_nll_optimizer import \
+    MultiClassNLLOptimizer
+
+from helpers.constants import SEED
 
 
 def train_complex(model_save_path, dataset, dataset_name=None, hyperparameters=None, load_existing_model=False, existing_model_path=None, evaluate_model=False, seed=SEED):

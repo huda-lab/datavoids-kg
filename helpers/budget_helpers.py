@@ -1,14 +1,16 @@
-import json
 import copy
+import json
 import math
 from functools import cmp_to_key
+
+import networkx as nx
 import numpy as np
 from Kelpie.dataset import Dataset
 from Kelpie.scripts.complex.explain import explain
-from helpers.kelpie_models_helpers import train_complex
+
 from helpers.constants import SEED
 from helpers.helpers import initialize_nx_graph, print_entity_id
-import networkx as nx
+from helpers.kelpie_models_helpers import train_complex
 
 
 def load_budget_from_file(fn: str):
@@ -19,8 +21,10 @@ def load_budget_from_file(fn: str):
 
 def parse_budget_from_dictionary(budget_data: dict, dataset: Dataset):
     res = {}
-    res["good_budget"] = [dataset.fact_to_sample(f) for f in budget_data["good_budget"]]
-    res["bad_budget"] = [dataset.fact_to_sample(f) for f in budget_data["bad_budget"]]
+    res["good_budget"] = [dataset.fact_to_sample(
+        f) for f in budget_data["good_budget"]]
+    res["bad_budget"] = [dataset.fact_to_sample(
+        f) for f in budget_data["bad_budget"]]
     res["overlapping_budget"] = [
         dataset.fact_to_sample(f) for f in budget_data["overlapping_budget"]
     ]
@@ -37,24 +41,26 @@ def parse_budget_from_dictionary(budget_data: dict, dataset: Dataset):
         except ValueError:
             print(f"Error processing key: {s}")
             raise
-    
+
     res["good_budget_costs"] = {}
     for s, c in budget_data["good_budget_costs"].items():
-        res["good_budget_costs"][dataset.fact_to_sample(handle_key_split(s))] = c
-    
+        res["good_budget_costs"][dataset.fact_to_sample(
+            handle_key_split(s))] = c
+
     res["bad_budget_costs"] = {}
     for s, c in budget_data["bad_budget_costs"].items():
-        res["bad_budget_costs"][dataset.fact_to_sample(handle_key_split(s))] = c
+        res["bad_budget_costs"][dataset.fact_to_sample(
+            handle_key_split(s))] = c
 
     res["good_budget_relevance"] = {}
     for s, c in budget_data["good_budget_relevance"].items():
-        res["good_budget_relevance"][dataset.fact_to_sample(handle_key_split(s))] = c
+        res["good_budget_relevance"][dataset.fact_to_sample(
+            handle_key_split(s))] = c
 
     res["bad_budget_relevance"] = {}
     for s, c in budget_data["bad_budget_relevance"].items():
-        res["bad_budget_relevance"][dataset.fact_to_sample(handle_key_split(s))] = c
-
-
+        res["bad_budget_relevance"][dataset.fact_to_sample(
+            handle_key_split(s))] = c
 
     return res
 
@@ -117,12 +123,16 @@ def get_budget(
                 else:
                     if sample[0][0] == target_sample[0]:
                         print("Getting degree of tail")
-                        budget_degrees[tuple(sample[0])] = graph.degree(sample[0][1])
-                        budget_costs[tuple(sample[0])] = graph.degree(sample[0][1])
+                        budget_degrees[tuple(sample[0])] = graph.degree(
+                            sample[0][1])
+                        budget_costs[tuple(sample[0])] = graph.degree(
+                            sample[0][1])
                     else:
                         print("Getting degree of head")
-                        budget_degrees[tuple(sample[0])] = graph.degree(sample[0][0])
-                        budget_costs[tuple(sample[0])] = graph.degree(sample[0][0])
+                        budget_degrees[tuple(sample[0])] = graph.degree(
+                            sample[0][0])
+                        budget_costs[tuple(sample[0])] = graph.degree(
+                            sample[0][0])
 
                 curr_cost += 1
 
