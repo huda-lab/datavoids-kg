@@ -211,6 +211,9 @@ def extract_subgraph_of_kg(dataset: Dataset, central_facts_to_investigate: list,
                 num_entries_kept += 1
     print("Finished generating dataset.")
     if save_path:
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        
         try:
             print("Saving in file", save_path, "...")
             with open(save_path, 'w') as file:
@@ -218,8 +221,8 @@ def extract_subgraph_of_kg(dataset: Dataset, central_facts_to_investigate: list,
                     fact = dataset.sample_to_fact(sample)
                     file.write('\t'.join(fact)+'\n')
             print("Saved dataset in file", save_path)
-        except:
-            print("Could not save file.")
+        except Exception as e:
+            print("Could not save file.", e)
 
     end_time = time.time()
     print(f"Elapsed Time: {end_time - start_time} seconds")
