@@ -44,6 +44,18 @@ FB15k-237 relations:
 
 ```
 
+command
+
+```
+python 2_flow.py --kg_name FB15k-237 --rels_to_test /film/actor/film./film/performance/film /film/director/film /tv/tv_producer/programs_produced./tv/tv_producer_term/program --num_heads_to_test 3 --num_attack_budget 25 --overlapping_budget_threshold 10 --diff_rankings 5
+
+```
+
+how to run in hpc
+```
+sbatch 2_flow.sh 
+```
+
 YAGO3-10 relations:
 ```
 
@@ -70,3 +82,7 @@ TODO: explain the contents of each python file.
 ```helpers/```
 
 ```Kelpie_package/```
+
+
+
+## Utilities

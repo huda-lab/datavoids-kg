@@ -23,6 +23,7 @@ def preview_samples_from_rel(rel: str, dataset: Dataset, label_map: dict):
 
 
 def convert_relation_to_fn(rel):
+    # change / to _
     return '_'.join(rel.split('/'))
 
 
@@ -100,6 +101,7 @@ def find_suitable_candidates(
     num_attack_budget: int = 25,
     overlapping_budget_threshold: int = 5,
     num_tails_per_head: int = 6,
+    dataset_name: Optional[str] = None
 ):
     graph = initialize_nx_graph(dataset)
     rel_id = dataset.get_id_for_relation_name(rel)
@@ -148,8 +150,8 @@ def find_suitable_candidates(
         graph=graph
     )
 
-    if not save_folder:
-        save_folder = "./results/"
+    save_folder = "./results/generated_candidates/"
+
     if not dataset_name:
         dataset_name = "yago310"
 
@@ -157,8 +159,8 @@ def find_suitable_candidates(
     dataset_save_directory = os.path.join(save_folder, dataset_name)
     # Create the new directory
     os.makedirs(dataset_save_directory, exist_ok=True)
-    # Create save directory for relation name
-    relation_save_directory = os.path.join(dataset_save_directory, rel)
+    # Create save directory for relation name and change \ in relation name to _
+    relation_save_directory = os.path.join(dataset_save_directory, convert_relation_to_fn(rel))
     os.makedirs(relation_save_directory, exist_ok=True)
 
     for x in range(num_heads_to_test):
@@ -236,18 +238,18 @@ def find_suitable_candidates(
             # check overlapping budget
             # if there is more overlap than the defined treshold, you skip
             # commented out constraints i will determine this later by hand
-            # if len(budget_res['overlapping_budget']) > overlapping_budget_threshold:
-            #     print("overlapping budget over threshold:",
-            #           len(budget_res['overlapping_budget']))
-            #     print()
+            if len(budget_res['overlapping_budget']) > overlapping_budget_threshold:
+                print("overlapping budget over threshold:",
+                      len(budget_res['overlapping_budget']))
+                print()
             #     continue
 
             # print("Budget constraints satisfied")
 
-            # print("Retrieved ranks")
+            print("Retrieved ranks")
 
-            # if abs(ranks[0] - ranks[1]) < diff_rankings:
-            #     print("Rank condition satisfied")
+            if abs(ranks[0] - ranks[1]) < diff_rankings:
+                print("Rank condition satisfied")
 
             facts_ranks_num_entities.append(
                 [good_fact, bad_fact, ranks, len(

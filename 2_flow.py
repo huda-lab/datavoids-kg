@@ -1,6 +1,6 @@
 import argparse
 import json
-from helpers.candidate_selection_helpers import find_suitable_candidates, convert_relation_to_fn,
+from helpers.candidate_selection_helpers import find_suitable_candidates, convert_relation_to_fn
 from helpers.helpers import  get_data_from_kg_name
 
 def main(kg_name, rels_to_test, num_heads_to_test, num_attack_budget, overlapping_budget_threshold, diff_rankings):
@@ -23,7 +23,9 @@ def main(kg_name, rels_to_test, num_heads_to_test, num_attack_budget, overlappin
                                  num_heads_to_test=num_heads_to_test,
                                  diff_rankings=diff_rankings,
                                  num_attack_budget=num_attack_budget,
-                                 overlapping_budget_threshold=overlapping_budget_threshold)
+                                 overlapping_budget_threshold=overlapping_budget_threshold,
+                                 dataset_name=kg_name
+                                 )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process KG dataset and relation parameters.')
