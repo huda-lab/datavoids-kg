@@ -254,8 +254,6 @@ def get_good_bad_fact_budgets(
             print(f"good_budget_degrees: {good_budget_degrees}")
             print(f"bad_budget_degrees: {bad_budget_degrees}")
 
-
-
     # update the remainder of the good and bad budgetcosts
     if cost_type == "kelpie":
         sorted_good_budget = list(

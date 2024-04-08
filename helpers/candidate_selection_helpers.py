@@ -1,9 +1,9 @@
-from typing import List, Optional
 import json
 import os
 from collections import Counter
 from itertools import combinations
 from math import comb
+from typing import List, Optional
 
 import numpy as np
 from Kelpie.dataset import Dataset
@@ -25,6 +25,7 @@ def preview_samples_from_rel(rel: str, dataset: Dataset, label_map: dict):
 def convert_relation_to_fn(rel):
     # change / to _
     return '_'.join(rel.split('/'))
+
 
 def tuple_to_filename(t):
     return '_'.join(s.replace('/', '-') for s in t)
@@ -123,7 +124,6 @@ def find_suitable_candidates(
 
     facts_ranks_num_entities = []
 
-
     head_degrees = list(graph.degree(relevant_head_ids))
 
     head_degrees.sort(reverse=True, key=lambda x: x[1])
@@ -155,16 +155,17 @@ def find_suitable_candidates(
     # Create the new directory
     os.makedirs(dataset_save_directory, exist_ok=True)
     # Create save directory for relation name and change \ in relation name to _
-    relation_save_directory = os.path.join(dataset_save_directory, convert_relation_to_fn(rel))
+    relation_save_directory = os.path.join(
+        dataset_save_directory, convert_relation_to_fn(rel))
     os.makedirs(relation_save_directory, exist_ok=True)
 
-    save_file = os.path.join(relation_save_directory, f'{convert_relation_to_fn(rel)}.json')
+    save_file = os.path.join(relation_save_directory,
+                             f'{convert_relation_to_fn(rel)}.json')
 
-     # check if there are existing candidates
+    # check if there are existing candidates
     if os.path.exists(save_file):
         with open(save_file, "r") as inf:
             facts_ranks_num_entities = json.load(inf)
-
 
     for x in range(num_heads_to_test):
         print("Testing head:")
