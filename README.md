@@ -87,4 +87,5 @@ TODO: explain the contents of each python file.
 
 ## Utilities and misc
 
-create a batch_jobs_out
+had to create a batch_jobs_out
+only jrs_env worked for me for cuda, not datavouds_env

@@ -237,12 +237,24 @@ def get_good_bad_fact_budgets(
 
     # remove overlapping budget from good and bad budget costs
     for sample in overlapping_budget:
-        del good_budget_costs[sample]
-        del bad_budget_costs[sample]
-        del good_budget_relevance[sample]
-        del bad_budget_relevance[sample]
-        del good_budget_degrees[sample]
-        del bad_budget_degrees[sample]
+        try:
+            del good_budget_costs[sample]
+            del bad_budget_costs[sample]
+            del good_budget_relevance[sample]
+            del bad_budget_relevance[sample]
+            del good_budget_degrees[sample]
+            del bad_budget_degrees[sample]
+        except Exception as e:
+            print(f"An error occurred with sample {sample}: {e}")
+            print("Current state of dictionaries:")
+            print(f"good_budget_costs: {good_budget_costs}")
+            print(f"bad_budget_costs: {bad_budget_costs}")
+            print(f"good_budget_relevance: {good_budget_relevance}")
+            print(f"bad_budget_relevance: {bad_budget_relevance}")
+            print(f"good_budget_degrees: {good_budget_degrees}")
+            print(f"bad_budget_degrees: {bad_budget_degrees}")
+
+
 
     # update the remainder of the good and bad budgetcosts
     if cost_type == "kelpie":

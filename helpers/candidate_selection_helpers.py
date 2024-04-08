@@ -26,6 +26,9 @@ def convert_relation_to_fn(rel):
     # change / to _
     return '_'.join(rel.split('/'))
 
+def tuple_to_filename(t):
+    return '_'.join(s.replace('/', '-') for s in t)
+
 
 def get_good_bad_fact_ranking(
     good_fact,
@@ -91,11 +94,7 @@ def find_suitable_candidates(
     rel: str,
     dataset: Dataset,
     train_test_valid_paths: list,
-    save_file: str,
     label_map: dict,
-    reduced_dataset_path: str,
-    budget_dump_file: str,
-    trained_model_save_path: str,
     diff_rankings: int = 3,
     num_heads_to_test: int = 6,
     num_attack_budget: int = 25,
@@ -124,10 +123,6 @@ def find_suitable_candidates(
 
     facts_ranks_num_entities = []
 
-    # check if there are existing candidates
-    if os.path.exists(save_file):
-        with open(save_file, "r") as inf:
-            facts_ranks_num_entities = json.load(inf)
 
     head_degrees = list(graph.degree(relevant_head_ids))
 
@@ -163,6 +158,14 @@ def find_suitable_candidates(
     relation_save_directory = os.path.join(dataset_save_directory, convert_relation_to_fn(rel))
     os.makedirs(relation_save_directory, exist_ok=True)
 
+    save_file = os.path.join(relation_save_directory, f'{convert_relation_to_fn(rel)}.json')
+
+     # check if there are existing candidates
+    if os.path.exists(save_file):
+        with open(save_file, "r") as inf:
+            facts_ranks_num_entities = json.load(inf)
+
+
     for x in range(num_heads_to_test):
         print("Testing head:")
         print_entity_id(chosen_head_ids[x][0], dataset, label_map)
@@ -197,11 +200,11 @@ def find_suitable_candidates(
             print()
 
             reduced_dataset_path = os.path.join(
-                relation_save_directory, f'{good_fact}_{bad_fact}.txt')
+                relation_save_directory, f'{tuple_to_filename(good_fact)}_{tuple_to_filename(bad_fact)}.txt')
             budget_dump_file = os.path.join(
-                relation_save_directory, f'{good_fact}_{bad_fact}_budget.json')
+                relation_save_directory, f'{tuple_to_filename(good_fact)}_{tuple_to_filename(bad_fact)}_budget.json')
             trained_model_save_path = os.path.join(
-                relation_save_directory, f'{good_fact}_{bad_fact}_model.pt')
+                relation_save_directory, f'{tuple_to_filename(good_fact)}_{tuple_to_filename(bad_fact)}_model.pt')
 
             if not os.path.exists(reduced_dataset_path):
                 extract_subgraph_of_kg(
