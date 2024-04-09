@@ -19,10 +19,10 @@ def main(kg_name, rels_to_test, num_heads_to_test, num_attack_budget, overlappin
               num_attack_budget, overlapping_budget_threshold, diff_rankings)
 
         # Finding suitable candidates
-        find_suitable_candidates(rel = rel, 
-                                dataset = dataset, 
-                                train_test_valid_paths = train_test_valid_paths,
-                                 label_map = None,
+        find_suitable_candidates(rel=rel,
+                                 dataset=dataset,
+                                 train_test_valid_paths=train_test_valid_paths,
+                                 label_map=None,
                                  num_heads_to_test=num_heads_to_test,
                                  diff_rankings=diff_rankings,
                                  num_attack_budget=num_attack_budget,
