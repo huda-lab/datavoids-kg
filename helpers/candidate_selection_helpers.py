@@ -229,7 +229,8 @@ def find_suitable_candidates(
                 num_budget=num_attack_budget,
                 trained_model_saving_path=trained_model_save_path,
                 budget_dump_file=budget_dump_file,
-                budget_strategy='kelpie'
+                budget_strategy='kelpie',
+                cost_type = 'degree'
             )
 
             print("Retrieved good and bad fact budget")

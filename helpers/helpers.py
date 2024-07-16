@@ -155,7 +155,11 @@ def get_data_from_kg_name(kg_name: str):
     TRAIN_PATH = f'{base_path}/train.txt'
     TEST_PATH = f'{base_path}/test.txt'
     VALID_PATH = f'{base_path}/valid.txt'
-    return Dataset(name=kg_name, load=True, train_path=TRAIN_PATH, test_path=TEST_PATH, valid_path=VALID_PATH), TRAIN_PATH, TEST_PATH, VALID_PATH
+    label_map_path = f'{base_path}/entity2wikidata.json'
+    if not os.path.exists(label_map_path):
+        label_map_path = None
+
+    return Dataset(name=kg_name, load=True, train_path=TRAIN_PATH, test_path=TEST_PATH, valid_path=VALID_PATH), TRAIN_PATH, TEST_PATH, VALID_PATH, label_map_path
 
 
 def extract_subgraph_of_kg(dataset: Dataset, central_facts_to_investigate: list, percentage_to_keep: int = None, num_entries_to_keep: int = None, save_path: str = None):

@@ -8,7 +8,7 @@ from helpers.helpers import get_data_from_kg_name
 
 def main(kg_name, rels_to_test, num_heads_to_test, num_attack_budget, overlapping_budget_threshold, diff_rankings):
     # Get the dataset and paths
-    dataset, TRAIN_PATH, TEST_PATH, VALID_PATH = get_data_from_kg_name(kg_name)
+    dataset, TRAIN_PATH, TEST_PATH, VALID_PATH, _ = get_data_from_kg_name(kg_name)
     train_test_valid_paths = [TRAIN_PATH, TEST_PATH, VALID_PATH]
 
     for rel_id in rels_to_test:
