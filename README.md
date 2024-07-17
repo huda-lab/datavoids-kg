@@ -17,6 +17,16 @@
     ```
     conda activate datavoids_env
     ```
+
+    Make sure that the Kelpie package is intalled.
+
+    ```
+    cd Kelpie_package/ 
+    pip install .
+    ```
+
+
+
 ## Supported Flows
 
 ### Flow 1: KG High-Level Analysis
@@ -50,16 +60,23 @@ command
 python 2_flow.py --kg_name FB15k-237 --rels_to_test /film/actor/film./film/performance/film /film/director/film /tv/tv_producer/programs_produced./tv/tv_producer_term/program --num_heads_to_test 3 --num_attack_budget 25 --overlapping_budget_threshold 10 --diff_rankings 5
 
 ```
-
 how to run in hpc
 ```
 sbatch 2_flow.sh 
 ```
 
-YAGO3-10 relations:
-```
 
-```
+## Flow 3: Run Experiments
+
+
+## Flow 4: Visualize
+
+calculate_stats_about_facts.py
+plot.py
+
+
+
+
 
 
 

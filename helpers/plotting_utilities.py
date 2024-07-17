@@ -10,6 +10,8 @@ from matplotlib.axes import Axes
 from helpers.constants import STATS_COLS
 from helpers.helpers import calculate_auc
 
+from helpers.candidate_selection_helpers import tuple_to_filename,convert_relation_to_fn
+
 # plt.rcParams["font.family"] = "Helvetica"
 plt.rcParams["font.size"] = 25
 plt.rcParams["figure.dpi"] = 200
@@ -224,13 +226,16 @@ def get_cost_spent_records(
     budget_folder: str,
     label_map: dict = None,
     base_res_folder: str = "results/remove_overlapping_budget",
+    kg_name = "FB15k-237" 
 ):
     cost_spent = defaultdict(dict)
 
     for good_fact, bad_fact in experiment_pairs:
         base_experiment_name = get_base_exp_name(
             good_fact, bad_fact, label_map)
-        budget_file_name = f"{budget_folder}/{base_experiment_name}_budget.json"
+        # modified to conform to new naming convention
+        relation = good_fact[1]
+        budget_file_name = f"./results/generated_candidates/{kg_name}/{convert_relation_to_fn(relation)}/{tuple_to_filename(good_fact)}_{tuple_to_filename(bad_fact)}_budget.json"
         with open(budget_file_name, "r") as f:
             budget = json.load(f)
 
