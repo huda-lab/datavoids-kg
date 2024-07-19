@@ -1,4 +1,6 @@
 import json
+import os
+import argparse
 from helpers.plotting_utilities import (
     simplify_full_exp_results,
     get_stats_tables,
@@ -9,129 +11,119 @@ from helpers.plotting_utilities import (
     plot_matrix_diffs,
     plot_costs_matrix,
 )
-import os
+from helpers.helpers import get_data_from_kg_name
 
-label_map_path = "./Kelpie_package/Kelpie/data/FB15k-237/entity2wikidata.json"
+def main(kg_name, experiment_pairs_file):
+    dataset, TRAIN_PATH, TEST_PATH, VALID_PATH, LABEL_MAP_PATH = get_data_from_kg_name(kg_name)
+    label_map = json.load(open(LABEL_MAP_PATH))
 
-label_map = json.load(open(label_map_path))
+    num_epochs = 10
+    base_res_folder = f"results/results/simulations/{kg_name}"
 
-NUM_EPOCHS = 10
-BASE_RES_FOLDER = "results/results/simulations/FB15k-237"
+    with open(experiment_pairs_file, 'r') as f:
+        experiment_pairs = json.load(f)
 
-experiment_pairs = [
-    ("/m/0151w_-/film/director/film-/m/0h03fhx","/m/0151w_-/film/director/film-/m/07kh6f3"), # 3_flow_1
-    ("/m/06pj8-/film/director/film-/m/0260bz", "/m/06pj8-/film/director/film-/m/07024"),# 3_flow_2
-    ("/m/014zcr-/film/actor/film./film/performance/film-/m/0418wg", "/m/014zcr-/film/actor/film./film/performance/film-/m/07w8fz"), #3_flow_3
-    ("/m/0151w_-/film/actor/film./film/performance/film-/m/0pc62", "/m/0151w_-/film/actor/film./film/performance/film-/m/0h03fhx") #3_flow_4
-]
+    clean_experiment_pairs = []
+    for pair in experiment_pairs:
+        good_fact, bad_fact = pair
+        good_fact = good_fact.split('-')
+        bad_fact = bad_fact.split('-')
+        clean_experiment_pairs.append((good_fact, bad_fact))
 
-clean_experiment_pairs = []
-for pair in experiment_pairs:
-    good_fact, bad_fact = pair
-    good_fact = good_fact.split('-')
-    bad_fact = bad_fact.split('-')
-    clean_experiment_pairs.append((good_fact, bad_fact))
+    experiment_pairs = clean_experiment_pairs
 
-experiment_pairs = clean_experiment_pairs
+    strategies = ["approx_greedy", "multi_greedy", "random"]
+    baselines = ["random"]
 
+    tables = get_stats_tables(
+        experiment_pairs=experiment_pairs,
+        base_res_folder=base_res_folder,
+        stats_file_name="stats.json",
+        label_map=label_map,
+        strategy_extension="random_approx_greedy",
+    )
 
-strategies = ["approx_greedy", "multi_greedy", "random"]
+    all_exp_results = get_full_exp_results(
+        experiment_pairs=experiment_pairs,
+        strategies=strategies,
+        n_epochs=num_epochs,
+        label_map=label_map,
+        base_res_folder=base_res_folder,
+    )
 
-baselines = ["random"]
+    all_diffs = get_disinformer_mitigator_avg_difference(
+        all_exp_results=all_exp_results, 
+        experiment_pairs=experiment_pairs, 
+        strategies=strategies, 
+        stat_tables=tables, 
+        label_map=label_map
+    )
 
-tables = get_stats_tables(
-    experiment_pairs=experiment_pairs,
-    base_res_folder=BASE_RES_FOLDER,
-    stats_file_name="stats.json",
-    label_map=label_map,
-    strategy_extension="random_approx_greedy",
-)
+    cost_spent = get_cost_spent_records(
+        experiment_pairs=experiment_pairs, 
+        strategies=strategies, 
+        n_epochs=num_epochs, 
+        budget_folder="new_budgets", 
+        label_map=label_map, 
+        base_res_folder=base_res_folder
+    )
 
-all_exp_results = get_full_exp_results(
-    experiment_pairs=experiment_pairs,
-    strategies=strategies,
-    n_epochs=NUM_EPOCHS,
-    label_map=label_map,
-    base_res_folder=BASE_RES_FOLDER,
-)
+    print("cost spent:", cost_spent)
 
-all_diffs = get_disinformer_mitigator_avg_difference(
-    all_exp_results=all_exp_results, 
-    experiment_pairs=experiment_pairs, 
-    strategies=strategies, 
-    stat_tables=tables, 
-    label_map=label_map
-)
+    all_rankings = simplify_full_exp_results(all_exp_results, num_epochs)
 
-cost_spent = get_cost_spent_records(
-    experiment_pairs=experiment_pairs, 
-    strategies=strategies, 
-    n_epochs=NUM_EPOCHS, 
-    budget_folder="new_budgets", 
-    label_map=label_map, 
-    base_res_folder=BASE_RES_FOLDER
-)
+    plots_folder = "results/plots/"
+    if not os.path.exists(plots_folder):
+        os.makedirs(plots_folder)
 
-print("cost spent:", cost_spent)
+    plot_matrix_diffs(
+        strategies,
+        baselines,
+        experiment_pairs,
+        all_diffs,
+        f"{plots_folder}fb15k_237_diffs_new_mogreedy_new.png",
+        label_map,
+        {
+            "approx_greedy": "Greedy",
+            "random": "Random",
+            "multi_greedy": "MultiObjective Greedy",
+        },
+        with_cost=False,
+        plot_stats_tables=False,
+        plot_random_random=False,
+        plot_topics_flipped=False,
+        with_auc=False,
+    )
 
-all_rankings = simplify_full_exp_results(all_exp_results, NUM_EPOCHS)
+    plot_matrix_rankings(
+        strategies,
+        baselines,
+        experiment_pairs,
+        all_rankings,
+        f"{plots_folder}fb15k_237_rankings_new.png",
+        label_map,
+        with_cost=False,
+        plot_stats_tables=False,
+        plot_random_random=False,
+    )
 
-plots_folder = "results/plots/"
-if not os.path.exists(plots_folder):
-    os.makedirs(plots_folder)
+    plot_costs_matrix(
+        cost_spent,
+        experiment_pairs,
+        strategies,
+        f"{plots_folder}fb15k_237_costs.png",
+        label_map,
+        {
+            "approx_greedy": "Greedy",
+            "random": "Random",
+            "multi_greedy": "MultiObjective Greedy",
+        },
+    )
 
-plot_matrix_diffs(
-    strategies,
-    baselines,
-    experiment_pairs,
-    all_diffs,
-    f"{plots_folder}fb15k_237_diffs_new_mogreedy_new.png",
-    label_map,
-    {
-        "approx_greedy": "Greedy",
-        "random": "Random",
-        "multi_greedy": "MultiObjective Greedy",
-    },
-    # tables,
-    with_cost=False,
-    # cost_spent=cost_spent,
-    plot_stats_tables=False,
-    plot_random_random=False,
-    plot_topics_flipped=False,
-    with_auc=False,
-)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Process knowledge graph name and experiment pairs file.')
+    parser.add_argument('--kg_name', type=str, help='The name of the knowledge graph')
+    parser.add_argument('--experiment_pairs_file', type=str, help='The path to the JSON file containing experiment pairs')
 
-plot_matrix_rankings(
-    strategies,
-    baselines,
-    experiment_pairs,
-    all_rankings,
-    f"{plots_folder}fb15k_237_rankings_new.png",
-    label_map,
-    # {
-    #     "approx_greedy": "Greedy",
-    #     "random": "Random",
-    #     "multi_greedy": "MultiObjective Greedy",
-    # },
-    # tables,
-    with_cost=False,
-    # cost_spent=cost_spent,
-    plot_stats_tables=False,
-    plot_random_random=False,
-    # plot_topics_flipped=False,
-    # with_auc=False,
-)
-
-plot_costs_matrix(
-    cost_spent,
-    experiment_pairs,
-    strategies,
-    f"{plots_folder}fb15k_237_costs.png",
-    label_map,
-    {
-        "approx_greedy": "Greedy",
-        "random": "Random",
-        "multi_greedy": "MultiObjective Greedy",
-    },
-)
-
+    args = parser.parse_args()
+    main(args.kg_name, args.experiment_pairs_file)
