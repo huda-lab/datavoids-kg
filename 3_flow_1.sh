@@ -33,8 +33,8 @@ conda activate datavoids
 
 # Set the input parameters
 KG_NAME="FB15k-237"
-GOOD_FACT="/m/0151w_-/film/director/film-/m/0h03fhx"
-BAD_FACT="/m/0151w_-/film/director/film-/m/07kh6f3"
+GOOD_FACT="/m/0151w_-/film/director/film-/m/07kh6f3"
+BAD_FACT="/m/0151w_-/film/director/film-/m/0h03fhx"
 NUM_ATTACK_BUDGET=25  
 NUM_RANDOM_REPS=10  
 PART=${SLURM_ARRAY_TASK_ID}

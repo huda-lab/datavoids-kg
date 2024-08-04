@@ -1,6 +1,6 @@
 # Datavoids in Knowledge Graphs
 
-
+This repository contains the latest implementation of the Knowledge Graph querying game presented in our [Datavoids](https://github.com/huda-lab/datavoids) paper, where two agents compete to influence the link prediction ranking of their respective triples following the presence of a simulated data void in the FB15k-237 dataset.
 
 ## Installation and Running Instructions
 
@@ -18,91 +18,33 @@
     conda activate datavoids_env
     ```
 
-    Make sure that the Kelpie package is intalled.
+    Make sure that the Kelpie package is installed.
 
     ```
     cd Kelpie_package/ 
     pip install .
     ```
 
+## Simulation Steps
 
+### Step 1: Knowledge Graph High-Level Analysis
 
-## Supported Flows
+Here, we take a high-level view of the knowledge graph to pick relations that might be interesting to explore further. We considered highly populated, one-to-many or many-to-many relations as a conceptual proxy for misinformation (e.g., Ben Affleck might have *directed* many movies, some being true and others false, but he was *only* born in one place). However, we encourage exploration of other relation types. Some of the things we generate here are: initial statistics on the specified knowledge graph (KG), including number of triples, number of entities, highest degree node, and a display of relations along with their types, allowing users to select specific relations for further analysis.
 
-### Flow 1: KG High-Level Analysis
-- Provide initial statistics on the specified knowledge graph (KG), including:
-    - Number of triples, number of entities, highest degree node.
-- Display relations along with their types, allowing users to select specific relations for further analysis.
-
-To run this flow, execute the following command:
-
+To run this step, execute the following command:
 ```
-python 1_flow.py --kg_name KG_NAME
+python 1_kg_analysis.py --kg_name FB15k-237
 ```
+where `KG_NAME` should be replaced with one of our supported knowledge graph datasets: `FB15k-237`.
 
-where `KG_NAME` should be replaced with one of our supported knowledge graph datasets: `FB15237` or `yago310`.
+### Step 2: Datavoid curation based on chosen relations
 
-### Flow 2: Datavoid curation based on chosen relations
-- Generate a list of candidate datavoid relations based on user input of relations from the KG.
+### Step 3: Calculate Preliminary Simulation Statistics
 
+### Step 4: Run Mitigator-vs-Disinformer Simulation
 
-FB15k-237 relations:
-```
-/film/actor/film./film/performance/film
-/film/director/film
-/tv/tv_producer/programs_produced./tv/tv_producer_term/program
+### Step 5: Visualize Simulation Results
 
-```
+## Acknowledgements
 
-command
-
-```
-python 2_flow.py --kg_name FB15k-237 --rels_to_test /film/actor/film./film/performance/film /film/director/film /tv/tv_producer/programs_produced./tv/tv_producer_term/program --num_heads_to_test 3 --num_attack_budget 25 --overlapping_budget_threshold 10 --diff_rankings 5
-
-```
-how to run in hpc
-```
-sbatch 2_flow.sh 
-```
-
-
-## Flow 3: Run Experiments
-
-
-## Flow 4: Visualize
-
-calculate_stats_about_facts.py
-plot.py
-
-
-
-
-
-
-
-### Missing Flows
-
-[] Data void curation
-- using the relations chosen above, run ```get_candidates.sh```
-- mdify so that we sabe all of the intermediayte smaller kgs generated and tested. 
-- maybe would have to change how to choose the head and tail for a given relation?? 
-
-[] Data for simulation preparation
-
-[] Simulation run
-
-[] Visualization
-
-## Code Organization Explanation:
-TODO: explain the contents of each python file. 
-
-```helpers/```
-
-```Kelpie_package/```
-
-
-
-## Utilities and misc
-
-had to create a batch_jobs_out
-only jrs_env worked for me for cuda, not datavouds_env
+We want to thank Rossi et al. for their implementation of the [Kelpie](https://github.com/AndRossi/Kelpie) explainability framework, which we directly use as a Python package (see ```Kelpie_package/```) in our work to power the triple explanations used as a budget an agent utilizes to explain the specific link prediction they are promoting during the simulation.
