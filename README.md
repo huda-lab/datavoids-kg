@@ -35,9 +35,27 @@ To run this step, execute the following command:
 ```
 python 1_kg_analysis.py --kg_name FB15k-237
 ```
-where `KG_NAME` should be replaced with one of our supported knowledge graph datasets: `FB15k-237`.
+where `kg_name` should be replaced with one of our supported knowledge graph datasets: `FB15k-237`.
 
-### Step 2: Datavoid curation based on chosen relations
+## Step 2: Data Void Curation Based on Chosen Relations
+
+After selecting the relations of interest in Step 1, we generate a list of candidate pairs for each relation to run the simulation. The process begins by selecting the highest degree head entity nodes for testing. For each head entity and relation pair, we generate combinations with their respective highest degree tail nodes. We then create a 5% reduced dataset for each combination and run tail prediction to obtain the initial ranks. Finally, we calculate the overlap in the Kelpie explanations for each pair. This approach allows us to identify potential data void scenarios and prepare the dataset for subsequent simulation steps.
+
+The results for this step are saved in `results/{kg_name}/{relation_name}/`.
+
+To run this script, execute the following command:
+
+```
+python 2_datavoid_curation.py --kg_name FB15k-237 --rels_to_test /film/actor/film./film/performance/film /film/director/film /tv/tv_producer/programs_produced./tv/tv_producer_term/program --num_heads_to_test 3 --num_attack_budget 25 --num_tails_per_head 6 --overlapping_budget_threshold 10 --diff_rankings 5
+```
+where
+* `kg_name`: The dataset name (in our case, `FB15k-237`).
+* `rels_to_test`: The relations you want to test, obtained from Step 1, separated by spaces.
+* `num_heads_to_test`: The number of head entities to consider for each relation.
+* `num_tails_per_head`: The number of tail entities to test for each head entity.
+* `num_attack_budget`: The budget each prospective agent candidate in a pair will have.
+* `overlapping_budget_threshold`: The allowed budget overlap between the candidates in a given pair. Lower values are better.
+* `diff_rankings`: The maximum allowed difference in rankings for given candidate pairs. Lower values are better.
 
 ### Step 3: Calculate Preliminary Simulation Statistics
 
