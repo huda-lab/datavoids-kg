@@ -43,8 +43,6 @@ if __name__ == "__main__":
                         required=True, help='Number of heads to test')
     parser.add_argument('--num_tails_per_head', type=int,
                         required=True, help='Number of heads to test for a given head')
-    parser.add_argument('--num_heads_to_test', type=int,
-                        required=True, help='Number of heads to test')
     parser.add_argument('--num_attack_budget', type=int,
                         required=True, help='Number of attack budget')
     parser.add_argument('--overlapping_budget_threshold', type=int,
@@ -54,4 +52,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     main(args.kg_name, args.rels_to_test, args.num_heads_to_test,
-         args.num_attack_budget, args.overlapping_budget_threshold, args.diff_rankings)
+         args.num_attack_budget, args.overlapping_budget_threshold, args.diff_rankings, args.num_tails_per_head)

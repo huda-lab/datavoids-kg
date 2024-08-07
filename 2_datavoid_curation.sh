@@ -15,7 +15,7 @@
 module load miniconda
 source ~/.bashrc
 eval "$(conda shell.bash hook)"
-conda activate jr-env
+conda activate datavoids
 
 # create folder batch_jobs_out if it does not exist
 mkdir -p batch_jobs_out
