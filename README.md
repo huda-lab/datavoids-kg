@@ -2,6 +2,8 @@
 
 This repository contains the latest implementation of the Knowledge Graph querying game presented in our [Datavoids](https://github.com/huda-lab/datavoids) paper, where two agents compete to influence the link prediction ranking of their respective triples following the presence of a simulated data void in the FB15k-237 dataset.
 
+![kg-graphs](/resources/kg.png)
+
 ## Installation and Running Instructions
 
 1. Ensure access to a GPU-enabled compute instance with Python and Conda installed. For more information on Conda, visit [https://conda.io/projects/conda/en/latest/index.html](https://conda.io/projects/conda/en/latest/index.html).
