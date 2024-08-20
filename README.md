@@ -41,8 +41,7 @@ where `kg_name` should be replaced with one of our supported knowledge graph dat
 
 ### Step 2: Data Void Curation Based on Chosen Relations
 
-After selecting the relations of interest in Step 1, we generate a list of candidate pairs for each relation to run the simulation. The process begins by selecting the highest degree head entity nodes for testing. For each head entity and relation pair, we generate combinations with their respective highest degree tail nodes. We then create a 5% reduced dataset for each combination and run tail prediction to obtain the initial ranks. Finally, we calculate the overlap in the Kelpie explanations for each pair. This approach allows us to identify potential data void scenarios and prepare the dataset for subsequent simulation steps.
-
+After selecting the relations of interest in Step 1, we generate a list of candidate pairs for each relation to run the simulation. The process begins by selecting the highest degree head entity nodes for testing. For each head entity and relation pair, we generate combinations with their respective highest degree tail nodes. We then create a 5% reduced dataset for each combination and run tail prediction to obtain the initial ranks. Finally, we calculate the overlap in the Kelpie explanations for each pair.
 The results for this step are saved in `results/{kg_name}/{relation_name}/`.
 
 To run this script, execute the following command:
@@ -59,7 +58,40 @@ where
 * `overlapping_budget_threshold`: The allowed budget overlap between the candidates in a given pair. Lower values are better.
 * `diff_rankings`: The maximum allowed difference in rankings for given candidate pairs. Lower values are better.
 
+The results of this step will be found in `results/{kg_name}/{relation_name}/{relation_name}.json` a nested array, each element being an 4-element array that looks like so: 
+
+![step-3-results](/resources/step_3_reesults.png)
+
+where you have the first two elements are the candidate pair, the third element is the initial rankings of the  pairs, and the third element is the explanation overlap of the explanation budget for both. 
+
+Using the results of this step, select the candidate pairs you are most interested in and put them in the ```experiment_pairs.json``` to facilitate running the subsequent steps.
+
+```
+[
+    [["/m/0151w_","/film/director/film","/m/07kh6f3"], ["/m/0151w_","/film/director/film","/m/0h03fhx"]],
+    [["/m/06pj8","/film/director/film","/m/0260bz"], ["/m/06pj8","/film/director/film","/m/07024"]],
+    [["/m/014zcr","/film/actor/film./film/performance/film","/m/0418wg"], ["/m/014zcr","/film/actor/film./film/performance/film","/m/07w8fz"]],
+    [["/m/0151w_","/film/actor/film./film/performance/film","/m/0pc62"], ["/m/0151w_","/film/actor/film./film/performance/film","/m/0h03fhx"]]
+]
+
+````
+
 ### Step 3: Calculate Preliminary Simulation Statistics
+
+
+In this step, we generate preliminary simulation statistics of the datavoids. For the budget explanation of the candidate pairs, we calculate the degrees, relevance, and cost for each explanation fact, where
+
+```budget_degrees```  the degree of the head or tail entity in the explanation that is not the head entity of the data void query.
+```budget_cost```, the cost of the explanation fact, which we currently define by degree. 
+```budget_relevance``` wich is the relevance value provided by the Kelpie explainer. 
+
+
+To run, 
+
+```
+python 3_preliminary_stats.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
+```
+
 
 ### Step 4: Run Mitigator-vs-Disinformer Simulation
 

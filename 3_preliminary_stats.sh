@@ -19,4 +19,4 @@ eval "$(conda shell.bash hook)"
 conda activate datavoids
 
 
-python 3_5_flow.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
+python 3_preliminary_stats.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json

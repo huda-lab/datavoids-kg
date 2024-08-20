@@ -23,13 +23,6 @@ def main(kg_name, experiment_pairs_file):
     with open(experiment_pairs_file, 'r') as f:
         experiment_pairs = json.load(f)
 
-    clean_experiment_pairs = []
-    for pair in experiment_pairs:
-        good_fact, bad_fact = pair
-        good_fact = good_fact.split('-')
-        bad_fact = bad_fact.split('-')
-        clean_experiment_pairs.append((good_fact, bad_fact))
-
     experiment_pairs = clean_experiment_pairs
 
     strategies = ["approx_greedy", "multi_greedy", "random"]

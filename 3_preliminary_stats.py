@@ -16,15 +16,9 @@ def main(kg_name, experiment_pairs_file, save_folder="./results/stats", budget_f
     
     if not os.path.exists(save_folder):
         os.makedirs(save_folder)
-    
-    clean_experiment_pairs = []
-    for pair in experiment_pairs:
-        good_fact, bad_fact = pair
-        good_fact = good_fact.split('-')
-        bad_fact = bad_fact.split('-')
-        clean_experiment_pairs.append((good_fact, bad_fact))
-    experiment_pairs = clean_experiment_pairs
 
+    for x in experiment_pairs: 
+        print(x)
 
     for good_fact, bad_fact in experiment_pairs:
         budget_df = pd.DataFrame(
