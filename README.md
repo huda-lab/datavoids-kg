@@ -62,7 +62,7 @@ The results of this step will be found in `results/{kg_name}/{relation_name}/{re
 
 ![step-3-results](/resources/step_3_results.png)
 
-where you have the first two elements are the candidate pair, the third element is the initial rankings of the  pairs, and the third element is the explanation overlap of the explanation budget for both. 
+where you have the first two elements are the candidate pair, the third element is the initial rankings of the  pairs, and the fourth element is the explanation overlap of the explanation budget for both. 
 
 Using the results of this step, select the candidate pairs you are most interested in and put them in the ```experiment_pairs.json``` to facilitate running the subsequent steps.
 
