@@ -60,7 +60,7 @@ where
 
 The results of this step will be found in `results/{kg_name}/{relation_name}/{relation_name}.json` a nested array, each element being an 4-element array that looks like so: 
 
-![step-3-results](/resources/step_3_reesults.png)
+![step-3-results](/resources/step_3_results.png)
 
 where you have the first two elements are the candidate pair, the third element is the initial rankings of the  pairs, and the third element is the explanation overlap of the explanation budget for both. 
 
@@ -81,12 +81,12 @@ Using the results of this step, select the candidate pairs you are most interest
 
 In this step, we generate preliminary simulation statistics of the datavoids. For the budget explanation of the candidate pairs, we calculate the degrees, relevance, and cost for each explanation fact, where
 
-```budget_degrees```  the degree of the head or tail entity in the explanation that is not the head entity of the data void query.
-```budget_cost```, the cost of the explanation fact, which we currently define by degree. 
-```budget_relevance``` wich is the relevance value provided by the Kelpie explainer. 
+* `budget_degrees`  the degree of the head or tail entity in the explanation that is not the head entity of the data void query.
+* `budget_cost`, the cost of the explanation fact, which we currently define by degree. 
+* `budget_relevance` wich is the relevance value provided by the Kelpie explainer.
 
 
-To run, 
+To run this script, execute the following command: 
 
 ```
 python 3_preliminary_stats.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
