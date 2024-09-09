@@ -1,27 +1,5 @@
 
-# =based it off this. also, in the previous step we created the smaller txt file %
-"""
 
-Ben Affleck director Argo The Town (input_1.txt)
-/m/0151w_-/film/director/film-/m/07kh6f3
-/m/0151w_-/film/director/film-/m/0h03fhx
-
-Steven Spielberg director Saving Private Ryan Amistad (input_2.txt) -- flow 2 didnt produce exact same results
-/m/06pj8-/film/director/film-/m/0260bz
-/m/06pj8-/film/director/film-/m/07024
-
-George Clooney actor Good Night, and Good Luck. Ocean’s Twelve (input_7.txt)
-/m/014zcr-/film/actor/film./film/performance/film-/m/0418wg
-/m/014zcr-/film/actor/film./film/performance/film-/m/07w8fz
-
-there is no producer in reems stuff, only actor film other tha
-
-
-Ben Affleck producer Argo Pearl Harbor (input_10)
-/m/0151w_-/film/actor/film./film/performance/film-/m/0pc62
-/m/0151w_-/film/actor/film./film/performance/film-/m/0h03fhx
-
-"""
 
 import json
 import os
@@ -38,7 +16,7 @@ from helpers.constants import SEED
 from helpers.budget_helpers import get_good_bad_fact_budgets
 from helpers.helpers import get_data_from_kg_name
 
-def main(kg_name, good_fact_str, bad_fact_str, num_attack_budget, part, num_random_reps, regenerate_files=False):
+def main(kg_name, good_fact_str, bad_fact_str, num_attack_budget, num_random_reps, regenerate_files=False):
     dataset, TRAIN_PATH, TEST_PATH, VALID_PATH, LABEL_MAP_PATH = get_data_from_kg_name(kg_name)
     LABEL_MAP = json.load(open(LABEL_MAP_PATH))
     
@@ -107,10 +85,7 @@ def main(kg_name, good_fact_str, bad_fact_str, num_attack_budget, part, num_rand
 
     STRATEGIES = ['approx_greedy', 'multi_greedy', 'random']
 
-    if part == 1:
-        mitigator_strategies = ['approx_greedy', 'random']
-    else:
-        mitigator_strategies = ['multi_greedy']
+    mitigator_strategies = ['approx_greedy', 'random', 'multi_greedy']
 
     for mitigator_strategy in mitigator_strategies:
         for disinformer_strategy in STRATEGIES:
@@ -155,8 +130,6 @@ if __name__ == "__main__":
                         help='Bad fact to test, format: entity-relation-entity')
     parser.add_argument('--num_attack_budget', type=int,
                         required=True, help='Number of attack budget')
-    parser.add_argument('--part', type=int, required=True,
-                        help='Part number to determine mitigator strategies')
     parser.add_argument('--num_random_reps', type=int, required=True,
                         help='Number of random reps')
     parser.add_argument('--regenerate_files', action='store_true', 
@@ -164,4 +137,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     main(args.kg_name, args.good_fact, args.bad_fact,
-         args.num_attack_budget, args.part, args.num_random_reps, args.regenerate_files)
+         args.num_attack_budget, args.num_random_reps, args.regenerate_files)

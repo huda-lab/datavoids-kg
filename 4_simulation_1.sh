@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#SBATCH --array=1-2
 #SBATCH -p nvidia
 #SBATCH -t 60:00:00
 #SBATCH --cpus-per-task=8
@@ -10,19 +9,7 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 
-#SBATCH --mail-user=jfg388@nyu.edu
-
-# python -u 3_flow.py \
-#     --kg_name "FB15k-237" \
-#     --good_fact "/m/0151w_-/film/director/film-/m/0h03fhx" \
-#     --bad_fact "/m/0151w_-/film/director/film-/m/07kh6f3" \
-#     --part 0 \
-#     --num_attack_budget 25 \
-#     --num_random_reps 10 \
-#     --regenerate_files
-
-
-# Ben Affleck director Argo The Town (input_1.txt) 
+#SBATCH --mail-user=jfg388@nyu.edu 
 
 
 # Activate any environments if required
@@ -37,14 +24,12 @@ GOOD_FACT="/m/0151w_-/film/director/film-/m/07kh6f3"
 BAD_FACT="/m/0151w_-/film/director/film-/m/0h03fhx"
 NUM_ATTACK_BUDGET=25  
 NUM_RANDOM_REPS=10  
-PART=${SLURM_ARRAY_TASK_ID}
 
 # Run the Python script with the specified arguments
-python -u 3_flow.py \
+python -u 4_simulation.py \
     --kg_name $KG_NAME \
     --good_fact $GOOD_FACT \
     --bad_fact $BAD_FACT \
-    --part $PART \
     --num_attack_budget $NUM_ATTACK_BUDGET \
     --num_random_reps $NUM_RANDOM_REPS \
     --regenerate_files

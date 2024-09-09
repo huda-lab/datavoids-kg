@@ -58,13 +58,31 @@ where
 * `overlapping_budget_threshold`: The allowed budget overlap between the candidates in a given pair. Lower values are better.
 * `diff_rankings`: The maximum allowed difference in rankings for given candidate pairs. Lower values are better.
 
-The results of this step will be found in `results/{kg_name}/{relation_name}/{relation_name}.json` a nested array, each element being an 4-element array that looks like so: 
+The results of this step will be found in `results/{kg_name}/{relation_name}/{relation_name}.json`, which is a nested array. Each element is a 4-element array that looks like this:
 
-![step-3-results](/resources/step_3_results.png)
+```json
+[
+    [
+        "/m/0151w_",
+        "/film/director/film",
+        "/m/0h03fhx"
+    ],
+    [
+        "/m/0151w_",
+        "/film/director/film",
+        "/m/07kh6f3"
+    ],
+    [
+        2,
+        1
+    ],
+    11
+]
+```
 
-where you have the first two elements are the candidate pair, the third element is the initial rankings of the  pairs, and the fourth element is the explanation overlap of the explanation budget for both. 
+The first two elements are the candidate pair, the third element contains the initial rankings of the pairs, and the fourth element is the explanation overlap of the explanation budget for both.
 
-Using the results of this step, select the candidate pairs you are most interested in and put them in the ```experiment_pairs.json``` to facilitate running the subsequent steps.
+Using the results of this step, select the candidate pairs you are most interested in and put them in the ```experiment_pairs.json``` file to facilitate running the subsequent steps:
 
 ```
 [
@@ -73,7 +91,6 @@ Using the results of this step, select the candidate pairs you are most interest
     [["/m/014zcr","/film/actor/film./film/performance/film","/m/0418wg"], ["/m/014zcr","/film/actor/film./film/performance/film","/m/07w8fz"]],
     [["/m/0151w_","/film/actor/film./film/performance/film","/m/0pc62"], ["/m/0151w_","/film/actor/film./film/performance/film","/m/0h03fhx"]]
 ]
-
 ````
 
 ### Step 3: Calculate Preliminary Simulation Statistics
@@ -92,10 +109,36 @@ To run this script, execute the following command:
 python 3_preliminary_stats.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
 ```
 
-
 ### Step 4: Run Mitigator-vs-Disinformer Simulation
 
+To run the mitigator-vs-disinformer simulation, execute the following command:
+
+```python
+python -u 4_simulation.py \
+     --kg_name "FB15k-237" \
+     --good_fact "/m/0151w_-/film/director/film-/m/0h03fhx" \
+     --bad_fact "/m/0151w_-/film/director/film-/m/07kh6f3" \
+     --num_attack_budget 25 \
+     --num_random_reps 10 \
+     --regenerate_files
+```
+Where:
+
+- `kg_name`: The dataset name (in this case, `FB15k-237`).
+- `good_fact`: The good fact of the simulation, with each entity separated by `-`.
+- `bad_fact`: The bad fact of the simulation, with each entity separated by `-`.
+- `attack_budget`: The explanation budget for each agent in the simulation (tested with 25).
+- `num_random_reps`: Number of times the random experiment will run.
+
+We provide 4 bash scripts (`4_simulation_1.sh`, `4_simulation_2.sh`, `4_simulation_3.sh`, `4_simulation_4.sh`) for each of the facts in the `experiment_pairs.json` for ease of running.
+
 ### Step 5: Visualize Simulation Results
+Once the simulation is complete for all facts in the `experiment_pairs.json`, run the following to visualize the results:
+
+```python
+python 5_simulation.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
+
+```
 
 ## Acknowledgements
 
