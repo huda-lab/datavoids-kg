@@ -9,7 +9,6 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 
-#SBATCH --mail-user=jfg388@nyu.edu
 
 # Load the necessary modules
 module load miniconda

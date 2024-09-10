@@ -23,7 +23,6 @@ def main(kg_name, experiment_pairs_file):
     with open(experiment_pairs_file, 'r') as f:
         experiment_pairs = json.load(f)
 
-    experiment_pairs = clean_experiment_pairs
 
     strategies = ["approx_greedy", "multi_greedy", "random"]
     baselines = ["random"]

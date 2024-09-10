@@ -10,7 +10,6 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 
-#SBATCH --mail-user=jfg388@nyu.edu
 
 # Activate any environments if required
 module load miniconda
@@ -19,4 +18,4 @@ eval "$(conda shell.bash hook)"
 conda activate datavoids
 
 
-python 5_simulation.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
+python 5_visualization.py --kg_name FB15k-237 --experiment_pairs_file experiment_pairs.json
