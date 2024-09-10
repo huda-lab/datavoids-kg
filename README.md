@@ -129,6 +129,7 @@ Where:
 - `bad_fact`: The bad fact of the simulation, with each entity separated by `-`.
 - `attack_budget`: The explanation budget for each agent in the simulation (tested with 25).
 - `num_random_reps`: Number of times the random experiment will run.
+- `regenerate_files`: Boolean flag to regenerate the files neded for the simulation to run, first generated in Step 2.
 
 We provide 4 bash scripts (`4_simulation_1.sh`, `4_simulation_2.sh`, `4_simulation_3.sh`, `4_simulation_4.sh`) for each of the facts in the `experiment_pairs.json` for ease of running.
 
